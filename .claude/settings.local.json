@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(for i in {02..10})",
+      "Bash(do mkdir -p \"Curso_Lideranca_Equipas/Modulo_$i/Licoes\" \"Curso_Lideranca_Equipas/Modulo_$i/Recursos\" \"Curso_Lideranca_Equipas/Modulo_$i/Quizzes\" \"Curso_Lideranca_Equipas/Modulo_$i/Exercicios\" \"Curso_Lideranca_Equipas/Modulo_$i/Templates\")",
+      "Bash(done)",
+      "Bash(vercel:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
