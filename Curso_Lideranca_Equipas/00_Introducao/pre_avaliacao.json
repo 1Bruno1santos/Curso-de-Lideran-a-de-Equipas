@@ -1,0 +1,323 @@
+{
+  "quiz": {
+    "title": "Pré-Avaliação: Conhecimentos Iniciais em Liderança",
+    "description": "Esta avaliação diagnóstica ajuda-nos a compreender o seu nível atual de conhecimento sobre liderança. Não se preocupe com a nota - é apenas para personalizar melhor a sua experiência de aprendizagem.",
+    "instructions": "Responda a todas as questões com base no seu conhecimento atual. Tem 30 minutos para completar esta avaliação.",
+    "time_limit": 30,
+    "passing_score": 0,
+    "show_results": true,
+    "randomize_questions": true,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple_choice",
+        "question": "Qual é a principal diferença entre um gestor e um líder?",
+        "options": [
+          "Não existe diferença, são sinónimos",
+          "O gestor administra recursos, o líder inspira e influencia pessoas",
+          "O líder tem sempre um cargo superior ao gestor",
+          "O gestor trabalha com pessoas, o líder com processos"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Excelente! Compreende a distinção fundamental entre gestão e liderança.",
+          "incorrect": "A principal diferença está no foco: gestores administram recursos e processos, líderes inspiram e influenciam pessoas para alcançar uma visão."
+        }
+      },
+      {
+        "id": 2,
+        "type": "multiple_choice",
+        "question": "O que é liderança situacional?",
+        "options": [
+          "Liderar apenas em situações de crise",
+          "Adaptar o estilo de liderança conforme a maturidade e necessidades da equipa",
+          "Mudar de líder conforme a situação",
+          "Liderar diferentes equipas ao mesmo tempo"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Correto! A liderança situacional é sobre flexibilidade e adaptação.",
+          "incorrect": "Liderança situacional significa adaptar o seu estilo de liderança às necessidades específicas da equipa e da situação."
+        }
+      },
+      {
+        "id": 3,
+        "type": "true_false",
+        "question": "Inteligência emocional é mais importante que competência técnica para um líder eficaz.",
+        "correct_answer": true,
+        "points": 5,
+        "feedback": {
+          "correct": "Estudos mostram que a inteligência emocional é realmente um preditor mais forte de sucesso em liderança.",
+          "incorrect": "Pesquisas indicam que a inteligência emocional representa até 67% das competências necessárias para liderança eficaz."
+        }
+      },
+      {
+        "id": 4,
+        "type": "multiple_choice",
+        "question": "Qual modelo descreve as fases de desenvolvimento de uma equipa?",
+        "options": [
+          "Modelo SWOT",
+          "Modelo Tuckman (Forming, Storming, Norming, Performing)",
+          "Pirâmide de Maslow",
+          "Matriz BCG"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Perfeito! O modelo de Tuckman é fundamental para compreender a evolução das equipas.",
+          "incorrect": "O modelo de Tuckman descreve as 4 fases de desenvolvimento de equipas: Forming, Storming, Norming e Performing."
+        }
+      },
+      {
+        "id": 5,
+        "type": "multiple_choice",
+        "question": "O que significa o acrónimo SMART em definição de objetivos?",
+        "options": [
+          "Simple, Measurable, Achievable, Realistic, Timed",
+          "Specific, Measurable, Achievable, Relevant, Time-bound",
+          "Strategic, Manageable, Actionable, Resourceful, Targeted",
+          "Smart, Modern, Agile, Responsive, Technological"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Excelente! Conhece esta ferramenta fundamental de gestão.",
+          "incorrect": "SMART significa: Specific (Específico), Measurable (Mensurável), Achievable (Alcançável), Relevant (Relevante) e Time-bound (Temporal)."
+        }
+      },
+      {
+        "id": 6,
+        "type": "true_false",
+        "question": "O feedback deve ser sempre positivo para motivar a equipa.",
+        "correct_answer": false,
+        "points": 5,
+        "feedback": {
+          "correct": "Correto! O feedback deve ser honesto e construtivo, não apenas positivo.",
+          "incorrect": "O feedback eficaz deve ser equilibrado, honesto e construtivo, incluindo tanto reconhecimento como áreas de melhoria."
+        }
+      },
+      {
+        "id": 7,
+        "type": "multiple_choice",
+        "question": "Qual é o principal objetivo da delegação eficaz?",
+        "options": [
+          "Reduzir a carga de trabalho do líder",
+          "Desenvolver competências da equipa e otimizar recursos",
+          "Evitar tarefas desagradáveis",
+          "Demonstrar autoridade"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Perfeito! A delegação é uma ferramenta de desenvolvimento e eficiência.",
+          "incorrect": "A delegação eficaz visa principalmente desenvolver a equipa e otimizar o uso de recursos e talentos."
+        }
+      },
+      {
+        "id": 8,
+        "type": "multiple_choice",
+        "question": "O que caracteriza a liderança transformacional?",
+        "options": [
+          "Foco em recompensas e punições",
+          "Inspirar mudança através de visão e valores partilhados",
+          "Manter o status quo organizacional",
+          "Liderar através de processos e procedimentos"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Exato! A liderança transformacional inspira mudança positiva.",
+          "incorrect": "A liderança transformacional caracteriza-se por inspirar e motivar através de uma visão compelling e valores partilhados."
+        }
+      },
+      {
+        "id": 9,
+        "type": "true_false",
+        "question": "Conflitos na equipa devem ser sempre evitados.",
+        "correct_answer": false,
+        "points": 5,
+        "feedback": {
+          "correct": "Correto! Conflitos construtivos podem levar a melhores soluções.",
+          "incorrect": "Conflitos construtivos, quando bem geridos, podem promover inovação e melhores decisões."
+        }
+      },
+      {
+        "id": 10,
+        "type": "multiple_choice",
+        "question": "Qual teoria motivacional sugere que as pessoas têm necessidades hierárquicas?",
+        "options": [
+          "Teoria X e Y de McGregor",
+          "Teoria dos Dois Fatores de Herzberg",
+          "Hierarquia das Necessidades de Maslow",
+          "Teoria da Expectativa de Vroom"
+        ],
+        "correct_answer": 2,
+        "points": 5,
+        "feedback": {
+          "correct": "Excelente! A pirâmide de Maslow é fundamental na compreensão da motivação.",
+          "incorrect": "A Hierarquia das Necessidades de Maslow propõe que as pessoas têm necessidades em níveis hierárquicos, desde básicas até autorrealização."
+        }
+      },
+      {
+        "id": 11,
+        "type": "multiple_choice",
+        "question": "O que é 'empowerment' no contexto de liderança?",
+        "options": [
+          "Aumentar o poder do líder",
+          "Dar autonomia e responsabilidade à equipa",
+          "Centralizar as decisões",
+          "Implementar tecnologia avançada"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Perfeito! Empowerment é sobre capacitar e dar autonomia à equipa.",
+          "incorrect": "Empowerment significa dar poder, autonomia e responsabilidade aos membros da equipa para tomarem decisões."
+        }
+      },
+      {
+        "id": 12,
+        "type": "true_false",
+        "question": "A comunicação não-verbal representa mais de 50% da comunicação interpessoal.",
+        "correct_answer": true,
+        "points": 5,
+        "feedback": {
+          "correct": "Correto! Estudos mostram que até 93% da comunicação emocional é não-verbal.",
+          "incorrect": "A comunicação não-verbal (gestos, tom de voz, expressões) representa 55-93% da comunicação interpessoal."
+        }
+      },
+      {
+        "id": 13,
+        "type": "multiple_choice",
+        "question": "Qual é a principal característica de uma equipa de alta performance?",
+        "options": [
+          "Todos os membros têm as mesmas competências",
+          "Confiança mútua e objetivos partilhados claros",
+          "Ausência total de conflitos",
+          "Liderança autoritária forte"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Excelente! Confiança e alinhamento são fundamentais.",
+          "incorrect": "Equipas de alta performance caracterizam-se principalmente por confiança mútua elevada e objetivos partilhados claros."
+        }
+      },
+      {
+        "id": 14,
+        "type": "multiple_choice",
+        "question": "O que significa ESG no contexto de liderança moderna?",
+        "options": [
+          "Employee Satisfaction Goals",
+          "Environmental, Social, and Governance",
+          "Enterprise Strategy Group",
+          "Effective Systematic Growth"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Perfeito! ESG é cada vez mais importante na liderança responsável.",
+          "incorrect": "ESG significa Environmental (Ambiental), Social e Governance (Governança) - pilares da sustentabilidade empresarial."
+        }
+      },
+      {
+        "id": 15,
+        "type": "true_false",
+        "question": "Líderes eficazes nascem com características inatas de liderança e não podem ser desenvolvidos.",
+        "correct_answer": false,
+        "points": 5,
+        "feedback": {
+          "correct": "Correto! A liderança pode e deve ser desenvolvida.",
+          "incorrect": "Pesquisas mostram que a liderança é principalmente uma competência desenvolvida através de aprendizagem e prática."
+        }
+      },
+      {
+        "id": 16,
+        "type": "multiple_choice",
+        "question": "Qual é o principal benefício da diversidade em equipas?",
+        "options": [
+          "Cumprir quotas legais",
+          "Melhor tomada de decisão através de perspetivas variadas",
+          "Reduzir custos operacionais",
+          "Simplificar a comunicação"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Exato! A diversidade enriquece a tomada de decisão.",
+          "incorrect": "A diversidade traz perspetivas variadas que levam a melhor criatividade, inovação e tomada de decisão."
+        }
+      },
+      {
+        "id": 17,
+        "type": "multiple_choice",
+        "question": "O que é 'coaching' no contexto de liderança?",
+        "options": [
+          "Dar ordens específicas à equipa",
+          "Processo de desenvolvimento através de orientação e feedback",
+          "Treino físico para líderes",
+          "Avaliação de desempenho anual"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Perfeito! Coaching é uma ferramenta poderosa de desenvolvimento.",
+          "incorrect": "Coaching é um processo de desenvolvimento onde o líder orienta e apoia o crescimento profissional dos membros da equipa."
+        }
+      },
+      {
+        "id": 18,
+        "type": "true_false",
+        "question": "A cultura organizacional tem pouco impacto no sucesso da liderança.",
+        "correct_answer": false,
+        "points": 5,
+        "feedback": {
+          "correct": "Correto! A cultura organizacional é fundamental para o sucesso.",
+          "incorrect": "A cultura organizacional tem um impacto massivo no sucesso da liderança e deve ser alinhada com os valores e objetivos."
+        }
+      },
+      {
+        "id": 19,
+        "type": "multiple_choice",
+        "question": "Qual é a melhor abordagem para liderar equipas remotas?",
+        "options": [
+          "Microgestão constante para garantir produtividade",
+          "Comunicação clara, confiança e foco em resultados",
+          "Reuniões presenciais obrigatórias semanais",
+          "Evitar totalmente o trabalho remoto"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Excelente! Confiança e comunicação são essenciais no remoto.",
+          "incorrect": "Liderar equipas remotas requer comunicação clara, confiança elevada e foco em resultados ao invés de horas trabalhadas."
+        }
+      },
+      {
+        "id": 20,
+        "type": "multiple_choice",
+        "question": "O que caracteriza um líder servidor (servant leadership)?",
+        "options": [
+          "Servir os superiores hierárquicos",
+          "Priorizar o desenvolvimento e bem-estar da equipa",
+          "Evitar tomar decisões difíceis",
+          "Delegar todas as responsabilidades"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "feedback": {
+          "correct": "Perfeito! O líder servidor coloca a equipa em primeiro lugar.",
+          "incorrect": "A liderança servidora caracteriza-se por colocar as necessidades de desenvolvimento e bem-estar da equipa como prioridade."
+        }
+      }
+    ],
+    "completion_message": {
+      "title": "Pré-Avaliação Concluída!",
+      "message": "Obrigado por completar a pré-avaliação. Os seus resultados ajudam-nos a personalizar a sua experiência de aprendizagem. Independentemente da sua pontuação, está no lugar certo para desenvolver as suas competências de liderança!",
+      "show_score": true,
+      "show_answers": true
+    }
+  }
+}

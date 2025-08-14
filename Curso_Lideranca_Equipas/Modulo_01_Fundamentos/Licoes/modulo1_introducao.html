@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1: Fundamentos da Liderança - Introdução</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 10px; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .module-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .info-card { background: rgba(255,255,255,0.2); padding: 20px; border-radius: 8px; }
+        .section { background: white; padding: 30px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { color: #667eea; border-bottom: 3px solid #f0f0f0; padding-bottom: 10px; margin-top: 0; }
+        h3 { color: #764ba2; margin-top: 30px; }
+        .objective { background: #f8f9ff; padding: 20px; margin: 15px 0; border-left: 4px solid #667eea; border-radius: 0 8px 8px 0; }
+        .prerequisite { background: #fff9e6; padding: 15px; border-left: 4px solid #ffd700; margin: 10px 0; border-radius: 0 6px 6px 0; }
+        .highlight { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .timeline { display: flex; justify-content: space-between; margin: 30px 0; flex-wrap: wrap; }
+        .timeline-item { flex: 1; min-width: 180px; text-align: center; padding: 15px; }
+        .timeline-number { background: #667eea; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: bold; }
+        .competency-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0; }
+        .competency-card { background: #f8f9ff; padding: 20px; border-radius: 8px; border: 1px solid #e0e0e0; transition: transform 0.3s; }
+        .competency-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .icon { font-size: 2em; margin-bottom: 10px; }
+        .lessons-overview { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0; }
+        .lesson-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; transition: transform 0.3s; }
+        .lesson-card:hover { transform: scale(1.05); }
+        .lesson-number { font-size: 2em; font-weight: bold; opacity: 0.8; }
+        .lesson-title { font-size: 1.3em; margin: 10px 0; }
+        .lesson-description { opacity: 0.9; line-height: 1.6; }
+        .resources-preview { background: #e8f5e9; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .resource-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .resource-item { background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #4caf50; }
+        .assessment-info { background: #fff3e0; padding: 20px; border-radius: 10px; margin: 20px 0; border: 2px solid #ff9800; }
+        .cta { background: #667eea; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; margin: 20px 10px 0 0; transition: all 0.3s; }
+        .cta:hover { background: #5a67d8; transform: translateY(-2px); }
+        .quote { font-style: italic; font-size: 1.2em; color: #666; text-align: center; padding: 20px; border-left: 4px solid #667eea; background: #f8f9ff; margin: 20px 0; }
+        .author { text-align: right; font-weight: bold; color: #667eea; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 MÓDULO 1: Fundamentos da Liderança</h1>
+        <p style="font-size: 1.2em; margin: 15px 0 0 0;">Construindo as Bases Sólidas para uma Liderança Excepcional</p>
+        
+        <div class="module-info">
+            <div class="info-card">
+                <div class="icon">⏱️</div>
+                <strong>Duração</strong><br>
+                6-8 horas
+            </div>
+            <div class="info-card">
+                <div class="icon">📚</div>
+                <strong>Lições</strong><br>
+                6 lições completas
+            </div>
+            <div class="info-card">
+                <div class="icon">🎯</div>
+                <strong>Nível</strong><br>
+                Fundamental-Avançado
+            </div>
+            <div class="info-card">
+                <div class="icon">🏆</div>
+                <strong>Certificação</strong><br>
+                Quiz + Exercícios
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Visão Geral do Módulo</h2>
+        
+        <p>Bem-vindo ao primeiro módulo do nosso curso de Liderança de Equipas! Este módulo constitui a pedra angular de toda a sua jornada de desenvolvimento como líder. Aqui, não nos limitaremos a abordar conceitos superficiais - mergulharemos profundamente nos alicerces científicos, psicológicos e práticos que distinguem verdadeiros líderes de meros ocupantes de cargos de gestão.</p>
+
+        <div class="quote">
+            "A liderança não é sobre estar no comando. É sobre cuidar daqueles que estão aos nossos cuidados."
+            <div class="author">- Simon Sinek</div>
+        </div>
+
+        <p>Durante as próximas 6-8 horas de aprendizagem intensiva, você desenvolverá uma compreensão profunda dos fundamentos que sustentam toda liderança eficaz. Este módulo foi meticulosamente construído com base em décadas de pesquisa em psicologia organizacional, neurociência da liderança e análise de casos reais de líderes que transformaram organizações e sociedades.</p>
+
+        <div class="highlight">
+            <h3 style="margin-top: 0; color: white;">🌟 Por que os Fundamentos são Cruciais?</h3>
+            <p style="margin-bottom: 0;">Muitos profissionais assumem posições de liderança sem compreender verdadeiramente o que significa liderar. Este módulo elimina essa lacuna, fornecendo-lhe uma base sólida que servirá como bússola em todas as situações de liderança que enfrentará ao longo da sua carreira.</p>
+        </div>
+
+        <p>Você descobrirá que liderança eficaz não é um talento inato reservado a alguns privilegiados, mas sim um conjunto de competências, mindsets e práticas que podem ser desenvolvidas sistematicamente. Ao final deste módulo, você possuirá uma compreensão clara de:</p>
+
+        <ul>
+            <li>Como a liderança evoluiu desde as primeiras civilizações até à era digital</li>
+            <li>As diferenças fundamentais entre gestão e liderança (e quando aplicar cada abordagem)</li>
+            <li>O framework completo de competências do líder moderno</li>
+            <li>Como desenvolver e aplicar inteligência emocional na liderança</li>
+            <li>Estratégias comprovadas para autoconhecimento e desenvolvimento contínuo</li>
+            <li>Como criar e comunicar uma visão inspiradora que mobilize equipas</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Objetivos de Aprendizagem</h2>
+        <p>Ao completar este módulo, você será capaz de:</p>
+
+        <div class="objective">
+            <strong>🎯 Objetivo 1: Compreensão Histórica e Contextual</strong>
+            <p>Analisar a evolução da liderança desde as primeiras civilizações até aos desafios contemporâneos, identificando padrões e princípios atemporais que continuam relevantes na liderança moderna.</p>
+        </div>
+
+        <div class="objective">
+            <strong>🎯 Objetivo 2: Distinção Clara entre Liderança e Gestão</strong>
+            <p>Distinguir claramente entre competências de liderança e gestão, sabendo quando e como aplicar cada abordagem em diferentes contextos organizacionais e situações específicas.</p>
+        </div>
+
+        <div class="objective">
+            <strong>🎯 Objetivo 3: Domínio do Framework de Competências</strong>
+            <p>Aplicar um framework abrangente de competências de liderança para autoavaliação e desenvolvimento, identificando pontos fortes e áreas de melhoria com base em critérios científicos.</p>
+        </div>
+
+        <div class="objective">
+            <strong>🎯 Objetivo 4: Desenvolvimento da Inteligência Emocional</strong>
+            <p>Implementar estratégias práticas para desenvolver inteligência emocional, incluindo autoconsciência, autorregulação, motivação, empatia e competências sociais aplicadas ao contexto de liderança.</p>
+        </div>
+
+        <div class="objective">
+            <strong>🎯 Objetivo 5: Criação de Plano de Desenvolvimento Pessoal</strong>
+            <p>Construir um plano personalizado de desenvolvimento de liderança baseado em autoconhecimento profundo, metas específicas e estratégias de crescimento contínuo.</p>
+        </div>
+
+        <div class="objective">
+            <strong>🎯 Objetivo 6: Articulação de Visão e Propósito</strong>
+            <p>Formular e comunicar uma visão de liderança pessoal clara e inspiradora, alinhada com valores autênticos e capaz de mobilizar equipas em direção a objetivos partilhados.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Estrutura das Lições</h2>
+        
+        <div class="lessons-overview">
+            <div class="lesson-card">
+                <div class="lesson-number">1.1</div>
+                <div class="lesson-title">História e Evolução da Liderança</div>
+                <div class="lesson-description">Explore como a liderança evoluiu desde líderes tribais até CEOs digitais, analisando grandes figuras históricas e suas contribuições para nossa compreensão moderna de liderança.</div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-number">1.2</div>
+                <div class="lesson-title">Diferença entre Líder e Gestor</div>
+                <div class="lesson-description">Domine as distinções cruciais entre liderança e gestão, aprendendo quando cada abordagem é mais eficaz e como integrar ambas competências.</div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-number">1.3</div>
+                <div class="lesson-title">Competências Essenciais do Líder Moderno</div>
+                <div class="lesson-description">Desenvolva um framework completo de competências hard e soft, incluindo competências digitais necessárias para liderar na era 4.0.</div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-number">1.4</div>
+                <div class="lesson-title">Inteligência Emocional na Liderança</div>
+                <div class="lesson-description">Aplique o modelo de Goleman para desenvolver autoconsciência, autorregulação, motivação, empatia e competências sociais em contextos de liderança.</div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-number">1.5</div>
+                <div class="lesson-title">Autoconhecimento e Desenvolvimento Pessoal</div>
+                <div class="lesson-description">Utilize ferramentas científicas de autoavaliação para criar um plano personalizado de desenvolvimento que acelere seu crescimento como líder.</div>
+            </div>
+
+            <div class="lesson-card">
+                <div class="lesson-number">1.6</div>
+                <div class="lesson-title">Visão, Missão e Valores na Liderança</div>
+                <div class="lesson-description">Construa e comunique uma visão inspiradora que mobilize equipas, alinhando valores pessoais com objetivos organizacionais.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Metodologia de Aprendizagem</h2>
+        
+        <p>Este módulo utiliza uma abordagem multifacetada que combina:</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-number">1</div>
+                <h4>Teoria Fundamentada</h4>
+                <p>Conceitos baseados em pesquisa científica rigorosa</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-number">2</div>
+                <h4>Casos Reais</h4>
+                <p>Análise de líderes e situações autênticas</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-number">3</div>
+                <h4>Autoavaliação</h4>
+                <p>Ferramentas para conhecimento próprio</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-number">4</div>
+                <h4>Aplicação Prática</h4>
+                <p>Exercícios e projetos aplicados</p>
+            </div>
+        </div>
+
+        <div class="competency-grid">
+            <div class="competency-card">
+                <div class="icon">📖</div>
+                <h3>Aprendizagem Ativa</h3>
+                <p>Participação ativa através de reflexões, exercícios e autoavaliações que consolidam o aprendizado.</p>
+            </div>
+            <div class="competency-card">
+                <div class="icon">🔬</div>
+                <h3>Base Científica</h3>
+                <p>Todos os conceitos são suportados por pesquisa em psicologia organizacional e neurociência.</p>
+            </div>
+            <div class="competency-card">
+                <div class="icon">🌍</div>
+                <h3>Perspetiva Global</h3>
+                <p>Exemplos e casos de líderes de diferentes culturas, setores e épocas históricas.</p>
+            </div>
+            <div class="competency-card">
+                <div class="icon">⚡</div>
+                <h3>Aplicação Imediata</h3>
+                <p>Ferramentas e técnicas que pode implementar imediatamente no seu contexto profissional.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pré-requisitos e Preparação</h2>
+        
+        <h3>📋 Pré-requisitos Recomendados</h3>
+        
+        <div class="prerequisite">
+            <strong>Experiência Profissional:</strong> Mínimo de 2 anos de experiência profissional, preferencialmente com alguma exposição a situações de liderança ou coordenação de projetos.
+        </div>
+        
+        <div class="prerequisite">
+            <strong>Mindset de Crescimento:</strong> Abertura para questionar conceitos pré-concebidos sobre liderança e disposição para autoavaliação honesta.
+        </div>
+        
+        <div class="prerequisite">
+            <strong>Compromisso com Aplicação:</strong> Disponibilidade para dedicar tempo à reflexão pessoal e implementação de conceitos no ambiente de trabalho.
+        </div>
+        
+        <div class="prerequisite">
+            <strong>Recursos Técnicos:</strong> Acesso a computador/tablet para completar exercícios interativos e ferramentas de autoavaliação online.
+        </div>
+
+        <h3>🎯 Como se Preparar para o Sucesso</h3>
+        <ul>
+            <li><strong>Reserve tempo dedicado:</strong> Planeie 6-8 horas ao longo de 1-2 semanas</li>
+            <li><strong>Prepare ambiente de estudo:</strong> Escolha local silencioso e livre de distrações</li>
+            <li><strong>Tenha caderno de reflexões:</strong> Para anotar insights e planos de ação</li>
+            <li><strong>Identifique situações de aplicação:</strong> Pense em contextos atuais onde pode aplicar os conceitos</li>
+            <li><strong>Complete a pré-avaliação:</strong> Se ainda não fez, complete a avaliação diagnóstica</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Recursos e Materiais</h2>
+        
+        <div class="resources-preview">
+            <h3>🎁 O que está incluído neste módulo:</h3>
+            
+            <div class="resource-list">
+                <div class="resource-item">
+                    <strong>📄 PDFs Complementares</strong><br>
+                    Sínteses e guias de referência rápida
+                </div>
+                <div class="resource-item">
+                    <strong>📊 Templates Práticos</strong><br>
+                    Ferramentas editáveis para autoavaliação
+                </div>
+                <div class="resource-item">
+                    <strong>✅ Checklists</strong><br>
+                    Guias passo a passo para implementação
+                </div>
+                <div class="resource-item">
+                    <strong>🎥 Vídeos Sugeridos</strong><br>
+                    Links para conteúdo complementar
+                </div>
+                <div class="resource-item">
+                    <strong>📚 Bibliografia</strong><br>
+                    Livros e artigos para aprofundamento
+                </div>
+                <div class="resource-item">
+                    <strong>🔗 Links Úteis</strong><br>
+                    Recursos online selecionados
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Avaliação e Certificação</h2>
+        
+        <div class="assessment-info">
+            <h3>📝 Sistema de Avaliação do Módulo 1</h3>
+            
+            <p><strong>Quiz do Módulo (40%):</strong> 20 questões variadas testando compreensão teórica e aplicação prática</p>
+            
+            <p><strong>Exercícios Práticos (35%):</strong> 5 atividades incluindo autoavaliações e criação de plano pessoal</p>
+            
+            <p><strong>Estudo de Caso (25%):</strong> Análise detalhada de situação real de liderança</p>
+            
+            <p><strong>Nota Mínima:</strong> 70% para progressão ao próximo módulo</p>
+            
+            <p><strong>Tentativas:</strong> 3 tentativas para quiz, submissões ilimitadas para exercícios</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Expectativas e Compromisso</h2>
+        
+        <p>Para maximizar o valor deste módulo, esperamos que você:</p>
+        
+        <ul>
+            <li>✅ <strong>Complete todas as lições sequencialmente</strong> - cada uma constrói sobre a anterior</li>
+            <li>✅ <strong>Realize todos os exercícios práticos</strong> - a aplicação é fundamental para o aprendizado</li>
+            <li>✅ <strong>Mantenha um diário de reflexões</strong> - documente insights e planos de ação</li>
+            <li>✅ <strong>Aplique os conceitos imediatamente</strong> - teste as ideias no seu ambiente de trabalho</li>
+            <li>✅ <strong>Seja honesto nas autoavaliações</strong> - a autenticidade é crucial para o desenvolvimento</li>
+            <li>✅ <strong>Dedique tempo à reflexão</strong> - não se limite a "consumir" conteúdo, processe-o profundamente</li>
+        </ul>
+
+        <div class="quote">
+            "O desenvolvimento de liderança é uma jornada, não um destino. Cada passo que dá neste módulo é um investimento no líder que você está a tornar-se."
+            <div class="author">- Curso de Liderança de Equipas</div>
+        </div>
+    </div>
+
+    <div class="section" style="text-align: center;">
+        <h2>Pronto para Começar?</h2>
+        <p style="font-size: 1.1em;">Está na hora de construir as fundações sólidas da sua liderança excepcional!</p>
+        
+        <a href="#" class="cta">🚀 Iniciar Lição 1.1</a>
+        <a href="#" class="cta">📚 Ver Recursos</a>
+        <a href="#" class="cta">🎯 Fazer Pré-teste</a>
+        
+        <p style="margin-top: 30px; color: #666;">
+            <em>Tempo estimado para conclusão completa: 6-8 horas | Lições: 6 | Exercícios: 5 | Quiz: 1</em>
+        </p>
+    </div>
+</body>
+</html>

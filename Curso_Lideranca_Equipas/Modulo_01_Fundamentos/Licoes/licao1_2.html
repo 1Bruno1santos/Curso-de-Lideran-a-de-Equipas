@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lição 1.2: Diferença entre Líder e Gestor</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 10px; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .lesson-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 20px 0; }
+        .info-card { background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; text-align: center; }
+        .section { background: white; padding: 30px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { color: #667eea; border-bottom: 3px solid #f0f0f0; padding-bottom: 10px; margin-top: 0; }
+        h3 { color: #764ba2; margin-top: 30px; }
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .comparison-card { padding: 25px; border-radius: 10px; text-align: center; }
+        .manager-card { background: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%); color: white; }
+        .leader-card { background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%); color: white; }
+        .vs-divider { display: flex; align-items: center; justify-content: center; font-size: 2em; font-weight: bold; color: #667eea; grid-column: 1 / -1; margin: 20px 0; }
+        .detailed-comparison { background: #f8f9ff; padding: 25px; border-radius: 10px; margin: 20px 0; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .comparison-table th { background: #667eea; color: white; padding: 15px; text-align: left; }
+        .comparison-table td { padding: 12px 15px; border-bottom: 1px solid #ddd; vertical-align: top; }
+        .comparison-table tr:nth-child(even) { background: #f8f9ff; }
+        .manager-col { background: #fff3e0 !important; }
+        .leader-col { background: #e8f5e9 !important; }
+        .situational-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0; }
+        .situation-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-left: 4px solid #667eea; }
+        .situation-title { font-weight: bold; color: #667eea; margin-bottom: 15px; font-size: 1.1em; }
+        .approach { margin-bottom: 15px; }
+        .manager-approach { background: #fff3e0; padding: 10px; border-radius: 6px; margin-bottom: 10px; }
+        .leader-approach { background: #e8f5e9; padding: 10px; border-radius: 6px; }
+        .integration-box { background: linear-gradient(135deg, #e1bee7 0%, #ce93d8 100%); color: white; padding: 25px; border-radius: 10px; margin: 30px 0; }
+        .skills-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .skill-card { background: #f8f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #667eea; }
+        .skill-level { font-size: 0.9em; color: #666; margin-top: 5px; }
+        .myth-buster { background: #ffebee; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #f44336; }
+        .case-study { background: #fff9e6; padding: 25px; border-radius: 10px; margin: 30px 0; border: 2px solid #ffd700; }
+        .case-title { font-size: 1.4em; font-weight: bold; color: #e65100; margin-bottom: 15px; }
+        .scenario { background: #e3f2fd; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .reflection-box { background: #e8f5e9; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .reflection-title { font-weight: bold; color: #4caf50; margin-bottom: 10px; }
+        .key-insight { background: #e3f2fd; padding: 20px; border-left: 4px solid #2196f3; margin: 20px 0; border-radius: 0 8px 8px 0; }
+        .nav-buttons { text-align: center; margin: 30px 0; }
+        .btn { background: #667eea; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; margin: 0 10px; display: inline-block; transition: background 0.3s; }
+        .btn:hover { background: #5a67d8; }
+        .btn-secondary { background: #4caf50; }
+        .btn-secondary:hover { background: #45a049; }
+        .quote-highlight { font-size: 1.1em; font-style: italic; color: #667eea; text-align: center; padding: 20px; background: #f8f9ff; border-radius: 8px; margin: 20px 0; }
+        .icon { font-size: 1.5em; margin-right: 10px; vertical-align: middle; }
+        .balance-scale { text-align: center; margin: 30px 0; }
+        .scale-item { display: inline-block; margin: 0 30px; padding: 20px; border-radius: 10px; min-width: 150px; }
+        .scale-manager { background: #ffa726; color: white; }
+        .scale-leader { background: #4caf50; color: white; }
+        .development-path { background: #f3e5f5; padding: 20px; border-radius: 10px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>⚖️ Lição 1.2: Diferença entre Líder e Gestor</h1>
+        <p style="font-size: 1.1em; margin: 15px 0 0 0;">Compreender Quando Liderar, Quando Gerir, e Como Integrar Ambas as Competências</p>
+        
+        <div class="lesson-info">
+            <div class="info-card">
+                <strong>⏱️ Duração</strong><br>
+                50-65 min
+            </div>
+            <div class="info-card">
+                <strong>📊 Dificuldade</strong><br>
+                Fundamental
+            </div>
+            <div class="info-card">
+                <strong>🎯 Objetivos</strong><br>
+                4 principais
+            </div>
+            <div class="info-card">
+                <strong>📚 Ferramentas</strong><br>
+                6 práticas
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Objetivos de Aprendizagem</h2>
+        
+        <p>Ao completar esta lição, você será capaz de:</p>
+        <ul>
+            <li><strong>Distinguir claramente</strong> entre competências de liderança e gestão em diferentes contextos</li>
+            <li><strong>Identificar</strong> quando aplicar abordagens de liderança versus gestão em situações específicas</li>
+            <li><strong>Desenvolver</strong> um perfil equilibrado que integre ambas as competências eficazmente</li>
+            <li><strong>Aplicar</strong> o modelo de liderança situacional para adaptar seu estilo às necessidades da equipa</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>O Grande Equívoco: Mitos vs. Realidade</h2>
+        
+        <div class="quote-highlight">
+            "Os gestores fazem as coisas certas. Os líderes fazem as coisas certas." - Warren Bennis
+        </div>
+
+        <div class="myth-buster">
+            <h3>🚫 Mitos Comuns Sobre Liderança vs. Gestão</h3>
+            
+            <p><strong>Mito 1:</strong> "Líderes são sempre superiores aos gestores"</p>
+            <p><strong>Realidade:</strong> Ambos são essenciais. Organizações precisam de excelente gestão E liderança inspiradora.</p>
+            
+            <p><strong>Mito 2:</strong> "Gestão é sobre controlo, liderança é sobre liberdade"</p>
+            <p><strong>Realidade:</strong> Gestão eficaz também envolve empowerment, e liderança também requer estrutura.</p>
+            
+            <p><strong>Mito 3:</strong> "Só pessoas em cargos seniores podem ser líderes"</p>
+            <p><strong>Realidade:</strong> Liderança pode ser exercida em qualquer nível organizacional.</p>
+            
+            <p><strong>Mito 4:</strong> "Liderança e gestão são mutuamente exclusivas"</p>
+            <p><strong>Realidade:</strong> Os melhores profissionais integram ambas competências fluidamente.</p>
+        </div>
+
+        <div class="key-insight">
+            <strong>💡 Insight Fundamental:</strong> A questão não é "líder OU gestor", mas sim "líder E gestor". A excelência organizacional requer profissionais que dominem ambas as dimensões e saibam quando aplicar cada uma.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Comparação Detalhada: Líder vs. Gestor</h2>
+
+        <div class="comparison-grid">
+            <div class="comparison-card manager-card">
+                <h3><span class="icon">🏢</span>GESTOR</h3>
+                <p><strong>Foco:</strong> Eficiência e Execução</p>
+                <p><strong>Orientação:</strong> Processos e Sistemas</p>
+                <p><strong>Horizonte:</strong> Curto a Médio Prazo</p>
+                <p><strong>Abordagem:</strong> Análise e Controlo</p>
+            </div>
+            
+            <div class="comparison-card leader-card">
+                <h3><span class="icon">🌟</span>LÍDER</h3>
+                <p><strong>Foco:</strong> Eficácia e Transformação</p>
+                <p><strong>Orientação:</strong> Pessoas e Visão</p>
+                <p><strong>Horizonte:</strong> Longo Prazo</p>
+                <p><strong>Abordagem:</strong> Inspiração e Influência</p>
+            </div>
+        </div>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Dimensão</th>
+                    <th class="manager-col">Perspetiva do Gestor</th>
+                    <th class="leader-col">Perspetiva do Líder</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Foco Principal</strong></td>
+                    <td class="manager-col">Fazer as coisas da forma correta<br><em>Eficiência operacional</em></td>
+                    <td class="leader-col">Fazer as coisas certas<br><em>Eficácia estratégica</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Orientação Temporal</strong></td>
+                    <td class="manager-col">Presente e futuro próximo<br><em>Resultados trimestrais</em></td>
+                    <td class="leader-col">Futuro e visão de longo prazo<br><em>Transformação sustentável</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Relação com Pessoas</strong></td>
+                    <td class="manager-col">Dirige subordinados<br><em>Estrutura hierárquica</em></td>
+                    <td class="leader-col">Inspira seguidores<br><em>Influência natural</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Abordagem à Mudança</strong></td>
+                    <td class="manager-col">Reativo - adapta-se às mudanças<br><em>Gestão de crise</em></td>
+                    <td class="leader-col">Proativo - inicia mudanças<br><em>Antecipação de tendências</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Fonte de Poder</strong></td>
+                    <td class="manager-col">Autoridade formal do cargo<br><em>Posição organizacional</em></td>
+                    <td class="leader-col">Influência pessoal e carisma<br><em>Credibilidade conquistada</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Tomada de Decisão</strong></td>
+                    <td class="manager-col">Baseada em dados e análise<br><em>Racionalidade e lógica</em></td>
+                    <td class="leader-col">Baseada em visão e intuição<br><em>Insight e experiência</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Comunicação</strong></td>
+                    <td class="manager-col">Informa e instrui<br><em>Clareza e precisão</em></td>
+                    <td class="leader-col">Inspira e motiva<br><em>Emoção e propósito</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Gestão de Riscos</strong></td>
+                    <td class="manager-col">Minimiza e controla riscos<br><em>Estabilidade e previsibilidade</em></td>
+                    <td class="leader-col">Assume riscos calculados<br><em>Inovação e crescimento</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Desenvolvimento de Talentos</strong></td>
+                    <td class="manager-col">Treina para competências específicas<br><em>Produtividade imediata</em></td>
+                    <td class="leader-col">Desenvolve potencial futuro<br><em>Crescimento pessoal</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Medição de Sucesso</strong></td>
+                    <td class="manager-col">KPIs, métricas, resultados quantitativos<br><em>Eficiência mensurável</em></td>
+                    <td class="leader-col">Impacto, transformação, legado<br><em>Valor qualitativo</em></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Quando Ser Gestor vs. Quando Ser Líder</h2>
+
+        <p>A chave para a eficácia está em saber <strong>quando</strong> aplicar cada abordagem. Diferentes situações exigem diferentes competências:</p>
+
+        <div class="situational-grid">
+            <div class="situation-card">
+                <div class="situation-title">🚨 Situação de Crise Operacional</div>
+                <div class="approach">
+                    <div class="manager-approach">
+                        <strong>💼 Abordagem de Gestão (Primária):</strong><br>
+                        • Ativação de protocolos de emergência<br>
+                        • Coordenação logística detalhada<br>
+                        • Monitorização rigorosa de métricas<br>
+                        • Comunicação precisa e factual
+                    </div>
+                    <div class="leader-approach">
+                        <strong>🌟 Complemento de Liderança:</strong><br>
+                        • Manter calma e confiança<br>
+                        • Comunicar visão de recuperação<br>
+                        • Inspirar equipa sob pressão
+                    </div>
+                </div>
+            </div>
+
+            <div class="situation-card">
+                <div class="situation-title">🚀 Transformação Organizacional</div>
+                <div class="approach">
+                    <div class="leader-approach">
+                        <strong>🌟 Abordagem de Liderança (Primária):</strong><br>
+                        • Articular visão inspiradora do futuro<br>
+                        • Mobilizar corações e mentes<br>
+                        • Superar resistência à mudança<br>
+                        • Modelar comportamentos desejados
+                    </div>
+                    <div class="manager-approach">
+                        <strong>💼 Complemento de Gestão:</strong><br>
+                        • Planear fases de implementação<br>
+                        • Alocar recursos necessários<br>
+                        • Monitorizar progressos e ajustar
+                    </div>
+                </div>
+            </div>
+
+            <div class="situation-card">
+                <div class="situation-title">📈 Otimização de Processos</div>
+                <div class="approach">
+                    <div class="manager-approach">
+                        <strong>💼 Abordagem de Gestão (Primária):</strong><br>
+                        • Análise detalhada de workflows<br>
+                        • Identificação de ineficiências<br>
+                        • Implementação de melhorias<br>
+                        • Medição de impacto quantitativo
+                    </div>
+                    <div class="leader-approach">
+                        <strong>🌟 Complemento de Liderança:</strong><br>
+                        • Envolver equipa na identificação de soluções<br>
+                        • Reconhecer contribuições<br>
+                        • Manter motivação durante transição
+                    </div>
+                </div>
+            </div>
+
+            <div class="situation-card">
+                <div class="situation-title">💡 Inovação e Criatividade</div>
+                <div class="approach">
+                    <div class="leader-approach">
+                        <strong>🌟 Abordagem de Liderança (Primária):</strong><br>
+                        • Crear ambiente psicologicamente seguro<br>
+                        • Encorajar experimentação<br>
+                        • Tolerar falhas como aprendizado<br>
+                        • Inspirar pensamento disruptivo
+                    </div>
+                    <div class="manager-approach">
+                        <strong>💼 Complemento de Gestão:</strong><br>
+                        • Estruturar processos de inovação<br>
+                        • Alocar tempo e recursos<br>
+                        • Estabelecer critérios de avaliação
+                    </div>
+                </div>
+            </div>
+
+            <div class="situation-card">
+                <div class="situation-title">👥 Desenvolvimento de Equipas</div>
+                <div class="approach">
+                    <div class="leader-approach">
+                        <strong>🌟 Abordagem de Liderança (Primária):</strong><br>
+                        • Inspirar crescimento pessoal<br>
+                        • Coaching e mentoring<br>
+                        • Criar oportunidades de stretch<br>
+                        • Construir confiança mútua
+                    </div>
+                    <div class="manager-approach">
+                        <strong>💼 Complemento de Gestão:</strong><br>
+                        • Planear programas de formação<br>
+                        • Estabelecer objetivos de desenvolvimento<br>
+                        • Monitorizar progressos
+                    </div>
+                </div>
+            </div>
+
+            <div class="situation-card">
+                <div class="situation-title">⚡ Execução de Projetos</div>
+                <div class="approach">
+                    <div class="manager-approach">
+                        <strong>💼 Abordagem de Gestão (Primária):</strong><br>
+                        • Planeamento detalhado de atividades<br>
+                        • Gestão rigorosa de timelines<br>
+                        • Controlo de qualidade<br>
+                        • Reporting de status regular
+                    </div>
+                    <div class="leader-approach">
+                        <strong>🌟 Complemento de Liderança:</strong><br>
+                        • Manter equipa motivada<br>
+                        • Resolver conflitos interpessoais<br>
+                        • Comunicar importância do projeto
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>O Modelo de Integração: Leader-Manager</h2>
+
+        <div class="integration-box">
+            <h3 style="margin-top: 0; color: white;">🎯 O Profissional Completo: Leader-Manager</h3>
+            <p style="margin-bottom: 0;">Os mais eficazes profissionais não escolhem entre ser líder OU gestor - eles desenvolvem ambas competências e aplicam-nas situacionalmente. Este é o "Leader-Manager" - o profissional do futuro.</p>
+        </div>
+
+        <div class="balance-scale">
+            <h3>⚖️ Encontrando o Equilíbrio</h3>
+            <div class="scale-item scale-manager">
+                <strong>GESTÃO</strong><br>
+                Estrutura, Processos<br>
+                Eficiência, Controlo
+            </div>
+            <span style="font-size: 2em;">⚖️</span>
+            <div class="scale-item scale-leader">
+                <strong>LIDERANÇA</strong><br>
+                Visão, Inspiração<br>
+                Inovação, Transformação
+            </div>
+        </div>
+
+        <div class="skills-matrix">
+            <div class="skill-card">
+                <strong>🎯 Visão Estratégica</strong>
+                <div class="skill-level">Competência de Liderança</div>
+                <p>Capacidade de articular futuro desejável e mobilizar pessoas em direção a essa visão.</p>
+            </div>
+            
+            <div class="skill-card">
+                <strong>📊 Gestão de Performance</strong>
+                <div class="skill-level">Competência de Gestão</div>
+                <p>Habilidade para estabelecer metas, monitorizar progresso e garantir resultados.</p>
+            </div>
+            
+            <div class="skill-card">
+                <strong>💬 Comunicação Inspiradora</strong>
+                <div class="skill-level">Competência de Liderança</div>
+                <p>Arte de comunicar de forma que motive, inspire e crie conexão emocional.</p>
+            </div>
+            
+            <div class="skill-card">
+                <strong>⚙️ Eficiência Operacional</strong>
+                <div class="skill-level">Competência de Gestão</div>
+                <p>Capacidade de otimizar processos, recursos e sistemas para máxima produtividade.</p>
+            </div>
+            
+            <div class="skill-card">
+                <strong>🌱 Desenvolvimento de Pessoas</strong>
+                <div class="skill-level">Ambas as Competências</div>
+                <p>Habilidade de fazer crescer talentos através de coaching e criação de oportunidades.</p>
+            </div>
+            
+            <div class="skill-card">
+                <strong>🔄 Adaptabilidade</strong>
+                <div class="skill-level">Ambas as Competências</div>
+                <p>Flexibilidade para ajustar estilo e abordagem conforme situação e contexto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <div class="case-title">📚 Estudo de Caso: Satya Nadella na Microsoft - O Leader-Manager em Ação</div>
+        
+        <p><strong>Contexto:</strong> Em 2014, Satya Nadella tornou-se CEO da Microsoft, uma empresa que estava perdendo relevância no mercado tecnológico.</p>
+        
+        <div class="scenario">
+            <h4>🔴 Desafios Encontrados:</h4>
+            <ul>
+                <li>Cultura interna competitiva e silos organizacionais</li>
+                <li>Foco excessivo no Windows em detrimento de outras áreas</li>
+                <li>Perda de market share para Apple, Google e Amazon</li>
+                <li>Percepção externa de empresa "legacy"</li>
+            </ul>
+        </div>
+
+        <div class="scenario">
+            <h4>🌟 Abordagem de Liderança:</h4>
+            <ul>
+                <li><strong>Transformação Cultural:</strong> De "know-it-all" para "learn-it-all"</li>
+                <li><strong>Nova Visão:</strong> "Empoderar cada pessoa e organização no planeta a alcançar mais"</li>
+                <li><strong>Liderança Empática:</strong> Promoveu inclusão e diversidade</li>
+                <li><strong>Growth Mindset:</strong> Incentivou experimentação e aprendizado com falhas</li>
+            </ul>
+        </div>
+
+        <div class="scenario">
+            <h4>💼 Execução de Gestão:</h4>
+            <ul>
+                <li><strong>Pivot Estratégico:</strong> Foco em cloud computing (Azure)</li>
+                <li><strong>Aquisições Inteligentes:</strong> LinkedIn, GitHub, Activision</li>
+                <li><strong>Métricas Claras:</strong> Migração de licenças para subscrições</li>
+                <li><strong>Reorganização:</strong> Quebrou silos e criou equipas cross-funcionais</li>
+            </ul>
+        </div>
+
+        <p><strong>Resultados:</strong> Entre 2014-2024, o valor da Microsoft aumentou de $300B para mais de $3T, tornando-se novamente uma das empresas mais valiosas do mundo.</p>
+
+        <p><strong>Lição:</strong> Nadella demonstrou que líder-managers eficazes combinam visão inspiradora com execução rigorosa. Ele transformou a cultura (liderança) enquanto reposicionava estrategicamente a empresa (gestão).</p>
+    </div>
+
+    <div class="section">
+        <h2>Desenvolvimento do Perfil Leader-Manager</h2>
+
+        <div class="development-path">
+            <h3>🛤️ Caminho de Desenvolvimento Integrado</h3>
+            
+            <h4>Fase 1: Autoavaliação Honesta</h4>
+            <ul>
+                <li>Identifique suas tendências naturais (mais gestor ou mais líder)</li>
+                <li>Reconheça pontos fortes e áreas de desenvolvimento</li>
+                <li>Peça feedback 360º de superiores, pares e subordinados</li>
+                <li>Use ferramentas de avaliação como DISC, Myers-Briggs, etc.</li>
+            </ul>
+
+            <h4>Fase 2: Desenvolvimento Consciente</h4>
+            <ul>
+                <li><strong>Se tendência para Gestão:</strong> Desenvolva visão, storytelling, inspiração</li>
+                <li><strong>Se tendência para Liderança:</strong> Fortaleça análise, processos, execução</li>
+                <li>Procure experiências que o desafiem na área mais fraca</li>
+                <li>Encontre mentores que exemplifiquem integração eficaz</li>
+            </ul>
+
+            <h4>Fase 3: Aplicação Situacional</h4>
+            <ul>
+                <li>Pratique identificar que situações requerem que abordagem</li>
+                <li>Desenvolva flexibilidade para mudar de "chapéu" rapidamente</li>
+                <li>Comunique claramente que "modo" está usando e porquê</li>
+                <li>Solicite feedback sobre eficácia situacional</li>
+            </ul>
+
+            <h4>Fase 4: Integração Fluida</h4>
+            <ul>
+                <li>Combine ambas abordagens naturalmente</li>
+                <li>Desenvolva intuição sobre quando aplicar cada uma</li>
+                <li>Torne-se modelo para outros aspirantes a leader-managers</li>
+                <li>Continue refinando e adaptando seu estilo</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Ferramentas Práticas para Aplicação Imediata</h2>
+
+        <div class="detailed-comparison">
+            <h3>🛠️ Kit de Ferramentas Leader-Manager</h3>
+            
+            <h4>1. Matriz de Decisão Situacional</h4>
+            <p>Use esta matriz para decidir que abordagem aplicar:</p>
+            <ul>
+                <li><strong>Alta Urgência + Baixa Complexidade = Gestão</strong></li>
+                <li><strong>Alta Urgência + Alta Complexidade = Ambas</strong></li>
+                <li><strong>Baixa Urgência + Alta Complexidade = Liderança</strong></li>
+                <li><strong>Baixa Urgência + Baixa Complexidade = Delegação</strong></li>
+            </ul>
+
+            <h4>2. Checklist de Comunicação</h4>
+            <p>Antes de comunicar, pergunte-se:</p>
+            <ul>
+                <li>O objetivo é informar (gestão) ou inspirar (liderança)?</li>
+                <li>A audiência precisa de direção clara ou motivação?</li>
+                <li>O momento requer facts (gestão) ou visão (liderança)?</li>
+                <li>Como posso combinar ambos para máximo impacto?</li>
+            </ul>
+
+            <h4>3. Framework de Reuniões Híbridas</h4>
+            <p>Estruture reuniões que integrem ambas dimensões:</p>
+            <ul>
+                <li><strong>Abertura:</strong> Conectar com propósito maior (liderança)</li>
+                <li><strong>Meio:</strong> Revisar métricas e progresso (gestão)</li>
+                <li><strong>Discussão:</strong> Resolver problemas colaborativamente (ambas)</li>
+                <li><strong>Fecho:</strong> Inspirar ação e próximos passos (liderança)</li>
+            </ul>
+
+            <h4>4. Plano de Desenvolvimento 70-20-10</h4>
+            <ul>
+                <li><strong>70% Experiência:</strong> Projetos que requeiram ambas competências</li>
+                <li><strong>20% Exposição:</strong> Mentoring com leader-managers experientes</li>
+                <li><strong>10% Educação:</strong> Formação formal em liderança e gestão</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Síntese e Reflexões</h2>
+
+        <div class="key-insight">
+            <strong>💡 Insight Central:</strong> A dicotomia "líder vs. gestor" é um falso dilema. O futuro pertence aos profissionais que dominam ambas competências e sabem aplicá-las situacionalmente. A pergunta não é "o que sou?", mas sim "o que esta situação requer?"
+        </div>
+
+        <div class="reflection-box">
+            <div class="reflection-title">🤔 Questões para Reflexão Pessoal:</div>
+            <ol>
+                <li>Para que lado tendo naturalmente - gestão ou liderança? Como posso desenvolver o lado mais fraco?</li>
+                <li>Que situações no meu trabalho atual requerem mais gestão vs. mais liderança?</li>
+                <li>Como posso comunicar melhor quando estou em "modo gestor" vs. "modo líder"?</li>
+                <li>Que competências específicas preciso desenvolver para ser um leader-manager eficaz?</li>
+                <li>Como posso procurar feedback sobre minha eficácia situacional?</li>
+                <li>Que oportunidades existem para praticar integração fluida de ambas abordagens?</li>
+            </ol>
+        </div>
+
+        <h3>Principais Takeaways desta Lição:</h3>
+        <ul>
+            <li>✅ Liderança e gestão são complementares, não competitivas</li>
+            <li>✅ Diferentes situações requerem diferentes abordagens</li>
+            <li>✅ Os profissionais mais eficazes integram ambas competências</li>
+            <li>✅ A flexibilidade situacional é uma meta-competência crucial</li>
+            <li>✅ Desenvolvimento consciente pode transformar gestores em leader-managers</li>
+            <li>✅ Comunicação clara sobre "que modo" se está usando melhora eficácia</li>
+        </ul>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="#" class="btn btn-secondary">← Lição Anterior</a>
+        <a href="#" class="btn">Próxima Lição: Competências Essenciais →</a>
+    </div>
+
+    <div class="section" style="background: #f8f9ff; text-align: center;">
+        <h2>🎯 Próximos Passos</h2>
+        <p>Agora que compreende as diferenças e sinergias entre liderança e gestão, está pronto para explorar o framework completo de competências do líder moderno.</p>
+        <p><strong>Na próxima lição:</strong> Descobrirá as competências essenciais que todo líder contemporâneo deve dominar.</p>
+        
+        <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px;">
+            <strong>📊 Progresso do Módulo:</strong> 2/6 lições completas (33%)
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "buildCommand": "echo 'Build completed'",
+  "outputDirectory": "./",
+  "installCommand": "npm install",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=86400"
+        }
+      ]
+    }
+  ]
+}

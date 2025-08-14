@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - DieselFormações</title>
+    <meta name="description" content="Dashboard de progresso e analytics do curso de Liderança de Equipas - DieselFormações">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Chart.js for analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="course-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>DieselFormações</span>
+                </div>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Início
+                    </a>
+                    <a href="curso.html" class="nav-link">
+                        <i class="fas fa-book"></i>
+                        Curso
+                    </a>
+                    <a href="dashboard.html" class="nav-link active">
+                        <i class="fas fa-chart-line"></i>
+                        Dashboard
+                    </a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn-icon dark-mode-toggle" title="Modo Escuro">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard-main">
+        <div class="container">
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+                <div class="dashboard-title">
+                    <h1>Meu Dashboard</h1>
+                    <p class="dashboard-subtitle">Acompanhe seu progresso e performance no curso</p>
+                </div>
+                <div class="dashboard-actions">
+                    <button class="btn btn-outline" onclick="app.exportProgress()">
+                        <i class="fas fa-download"></i>
+                        Exportar Dados
+                    </button>
+                    <button class="btn btn-primary" onclick="continueLearning()">
+                        <i class="fas fa-play"></i>
+                        Continuar Aprendizagem
+                    </button>
+                </div>
+            </div>
+
+            <!-- Key Metrics Cards -->
+            <div class="metrics-grid">
+                <div class="metric-card progress-card">
+                    <div class="metric-header">
+                        <h3>Progresso Geral</h3>
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="metric-content">
+                        <div class="progress-circle-large">
+                            <svg class="progress-svg-large" width="120" height="120">
+                                <circle cx="60" cy="60" r="50" stroke-width="6" stroke="#e5e7eb" fill="none"/>
+                                <circle cx="60" cy="60" r="50" stroke-width="6" stroke="var(--primary-color)" 
+                                        fill="none" stroke-dasharray="314" stroke-dashoffset="314" 
+                                        class="progress-circle-main"/>
+                            </svg>
+                            <div class="progress-text-large">
+                                <span class="progress-percentage-main">0%</span>
+                                <span class="progress-label">Completo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <h3>Tempo de Estudo</h3>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-number" id="totalTimeSpent">0h 0m</div>
+                        <div class="metric-subtitle">Total investido</div>
+                        <div class="metric-trend">
+                            <span class="trend-up">
+                                <i class="fas fa-arrow-up"></i>
+                                +15% esta semana
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <h3>Módulos Concluídos</h3>
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-number">
+                            <span id="completedModules">0</span>/<span id="totalModules">10</span>
+                        </div>
+                        <div class="metric-subtitle">Módulos</div>
+                        <div class="completion-bar">
+                            <div class="completion-fill" id="moduleCompletionBar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <h3>Performance em Quizzes</h3>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="metric-content">
+                        <div class="metric-number" id="averageQuizScore">0%</div>
+                        <div class="metric-subtitle">Média geral</div>
+                        <div class="score-indicator">
+                            <div class="score-bar" id="scoreBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts and Analytics -->
+            <div class="analytics-grid">
+                <!-- Progress Over Time -->
+                <div class="analytics-card">
+                    <div class="card-header">
+                        <h3>Progresso ao Longo do Tempo</h3>
+                        <div class="chart-controls">
+                            <button class="chart-period active" data-period="7">7 dias</button>
+                            <button class="chart-period" data-period="30">30 dias</button>
+                            <button class="chart-period" data-period="all">Todos</button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="progressChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Module Progress Breakdown -->
+                <div class="analytics-card">
+                    <div class="card-header">
+                        <h3>Progresso por Módulo</h3>
+                    </div>
+                    <div class="modules-progress">
+                        <div class="module-progress-item">
+                            <div class="module-info">
+                                <span class="module-title">Módulo 0: Introdução</span>
+                                <span class="module-status completed">Completo</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-text">100%</span>
+                        </div>
+
+                        <div class="module-progress-item">
+                            <div class="module-info">
+                                <span class="module-title">Módulo 1: Fundamentos</span>
+                                <span class="module-status in-progress">Em Progresso</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">75%</span>
+                        </div>
+
+                        <!-- Modules 2-10 will be populated dynamically -->
+                        <div id="dynamicModules"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity and Achievements -->
+            <div class="activity-grid">
+                <!-- Recent Activity -->
+                <div class="activity-card">
+                    <div class="card-header">
+                        <h3>Atividade Recente</h3>
+                        <a href="#" class="view-all">Ver tudo</a>
+                    </div>
+                    <div class="activity-list" id="recentActivity">
+                        <!-- Dynamic content will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="activity-card">
+                    <div class="card-header">
+                        <h3>Conquistas</h3>
+                        <span class="achievement-count" id="achievementCount">0/15</span>
+                    </div>
+                    <div class="achievements-grid" id="achievementsGrid">
+                        <!-- Achievements will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Study Schedule and Goals -->
+            <div class="goals-section">
+                <div class="goals-card">
+                    <div class="card-header">
+                        <h3>Metas de Estudo</h3>
+                        <button class="btn btn-sm btn-outline" onclick="openGoalsModal()">
+                            <i class="fas fa-edit"></i>
+                            Editar
+                        </button>
+                    </div>
+                    <div class="goals-content">
+                        <div class="goal-item">
+                            <div class="goal-icon">
+                                <i class="fas fa-calendar-week"></i>
+                            </div>
+                            <div class="goal-info">
+                                <h4>Meta Semanal</h4>
+                                <p>2 módulos por semana</p>
+                                <div class="goal-progress">
+                                    <div class="goal-bar">
+                                        <div class="goal-fill" style="width: 50%"></div>
+                                    </div>
+                                    <span>1/2 módulos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="goal-item">
+                            <div class="goal-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="goal-info">
+                                <h4>Tempo Diário</h4>
+                                <p>1 hora por dia</p>
+                                <div class="goal-progress">
+                                    <div class="goal-bar">
+                                        <div class="goal-fill" style="width: 75%"></div>
+                                    </div>
+                                    <span>45/60 min hoje</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calendar Widget -->
+                <div class="calendar-card">
+                    <div class="card-header">
+                        <h3>Cronograma de Estudos</h3>
+                        <div class="calendar-nav">
+                            <button class="btn-icon" onclick="previousMonth()">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <span id="currentMonth">Janeiro 2025</span>
+                            <button class="btn-icon" onclick="nextMonth()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="calendar-widget" id="studyCalendar">
+                        <!-- Calendar will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Goals Modal -->
+    <div class="modal" id="goalsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Definir Metas de Estudo</h2>
+                <button class="modal-close" onclick="closeGoalsModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="goalsForm">
+                    <div class="form-group">
+                        <label for="weeklyGoal">Meta Semanal (módulos)</label>
+                        <select id="weeklyGoal" class="form-control">
+                            <option value="1">1 módulo</option>
+                            <option value="2" selected>2 módulos</option>
+                            <option value="3">3 módulos</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dailyTime">Tempo Diário (minutos)</label>
+                        <select id="dailyTime" class="form-control">
+                            <option value="30">30 minutos</option>
+                            <option value="60" selected>1 hora</option>
+                            <option value="90">1.5 horas</option>
+                            <option value="120">2 horas</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="completionTarget">Meta de Conclusão</label>
+                        <input type="date" id="completionTarget" class="form-control">
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" onclick="closeGoalsModal()">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Salvar Metas</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+    
+    <!-- Dashboard specific JavaScript -->
+    <script>
+        class Dashboard {
+            constructor() {
+                this.app = window.app;
+                this.progressChart = null;
+                this.init();
+            }
+
+            init() {
+                this.loadDashboardData();
+                this.initCharts();
+                this.generateCalendar();
+                this.loadRecentActivity();
+                this.loadAchievements();
+                this.setupEventListeners();
+            }
+
+            loadDashboardData() {
+                const progress = this.app.getProgressData();
+                
+                // Update main metrics
+                this.updateProgressCircle(progress.totalProgress);
+                this.updateTimeSpent(progress.timeSpent);
+                this.updateModuleProgress(progress);
+                this.updateQuizPerformance(progress);
+            }
+
+            updateProgressCircle(percentage) {
+                const circle = document.querySelector('.progress-circle-main');
+                const text = document.querySelector('.progress-percentage-main');
+                
+                if (circle && text) {
+                    const circumference = 2 * Math.PI * 50;
+                    const offset = circumference - (percentage / 100) * circumference;
+                    circle.style.strokeDashoffset = offset;
+                    text.textContent = `${percentage}%`;
+                }
+            }
+
+            updateTimeSpent(milliseconds) {
+                const timeElement = document.getElementById('totalTimeSpent');
+                if (timeElement) {
+                    timeElement.textContent = this.app.formatTime(milliseconds);
+                }
+            }
+
+            updateModuleProgress(progress) {
+                const completed = progress.modulesCompleted.length;
+                const total = 10; // Total modules
+                
+                document.getElementById('completedModules').textContent = completed;
+                document.getElementById('totalModules').textContent = total;
+                
+                const percentage = (completed / total) * 100;
+                document.getElementById('moduleCompletionBar').style.width = `${percentage}%`;
+            }
+
+            updateQuizPerformance(progress) {
+                // Calculate average quiz score
+                const avgScore = 85; // Placeholder - would calculate from actual quiz results
+                document.getElementById('averageQuizScore').textContent = `${avgScore}%`;
+                document.getElementById('scoreBar').style.width = `${avgScore}%`;
+            }
+
+            initCharts() {
+                const ctx = document.getElementById('progressChart').getContext('2d');
+                
+                this.progressChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['1 Jan', '8 Jan', '15 Jan', '22 Jan', '29 Jan', '5 Fev', '12 Fev'],
+                        datasets: [{
+                            label: 'Progresso (%)',
+                            data: [0, 5, 12, 25, 35, 50, 65],
+                            borderColor: 'rgb(99, 102, 241)',
+                            backgroundColor: 'rgba(99, 102, 241, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100,
+                                ticks: {
+                                    callback: function(value) {
+                                        return value + '%';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            generateCalendar() {
+                const calendar = document.getElementById('studyCalendar');
+                const currentDate = new Date();
+                const year = currentDate.getFullYear();
+                const month = currentDate.getMonth();
+                
+                // Update month display
+                const monthNames = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+                                  'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+                document.getElementById('currentMonth').textContent = `${monthNames[month]} ${year}`;
+                
+                // Generate calendar grid
+                const firstDay = new Date(year, month, 1).getDay();
+                const daysInMonth = new Date(year, month + 1, 0).getDate();
+                
+                let calendarHTML = '<div class="calendar-grid">';
+                
+                // Add day headers
+                const dayHeaders = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+                dayHeaders.forEach(day => {
+                    calendarHTML += `<div class="calendar-day-header">${day}</div>`;
+                });
+                
+                // Add empty cells for days before month starts
+                for (let i = 0; i < firstDay; i++) {
+                    calendarHTML += '<div class="calendar-day empty"></div>';
+                }
+                
+                // Add days of the month
+                for (let day = 1; day <= daysInMonth; day++) {
+                    const isToday = day === currentDate.getDate();
+                    const hasActivity = [3, 5, 8, 12, 15, 18].includes(day); // Sample study days
+                    
+                    calendarHTML += `
+                        <div class="calendar-day ${isToday ? 'today' : ''} ${hasActivity ? 'has-activity' : ''}">
+                            <span class="day-number">${day}</span>
+                            ${hasActivity ? '<div class="activity-dot"></div>' : ''}
+                        </div>
+                    `;
+                }
+                
+                calendarHTML += '</div>';
+                calendar.innerHTML = calendarHTML;
+            }
+
+            loadRecentActivity() {
+                const activities = [
+                    {
+                        type: 'lesson_completed',
+                        title: 'Completou: Diferença entre Líder e Gestor',
+                        time: '2 horas atrás',
+                        icon: 'fas fa-check-circle'
+                    },
+                    {
+                        type: 'quiz_passed',
+                        title: 'Passou no Quiz do Módulo 1',
+                        time: '1 dia atrás',
+                        icon: 'fas fa-trophy'
+                    },
+                    {
+                        type: 'module_started',
+                        title: 'Iniciou Módulo 1: Fundamentos',
+                        time: '3 dias atrás',
+                        icon: 'fas fa-play'
+                    },
+                    {
+                        type: 'course_enrolled',
+                        title: 'Inscreveu-se no curso',
+                        time: '1 semana atrás',
+                        icon: 'fas fa-graduation-cap'
+                    }
+                ];
+
+                const activityHTML = activities.map(activity => `
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="${activity.icon}"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">${activity.title}</div>
+                            <div class="activity-time">${activity.time}</div>
+                        </div>
+                    </div>
+                `).join('');
+
+                document.getElementById('recentActivity').innerHTML = activityHTML;
+            }
+
+            loadAchievements() {
+                const achievements = [
+                    { id: 'first_lesson', title: 'Primeira Lição', description: 'Complete sua primeira lição', unlocked: true },
+                    { id: 'quiz_master', title: 'Mestre dos Quizzes', description: 'Passe em 3 quizzes seguidos', unlocked: true },
+                    { id: 'speed_learner', title: 'Aprendiz Rápido', description: 'Complete um módulo em 2 dias', unlocked: false },
+                    { id: 'perfect_score', title: 'Pontuação Perfeita', description: 'Obtenha 100% em um quiz', unlocked: false },
+                    { id: 'dedication', title: 'Dedicação', description: 'Estude por 7 dias seguidos', unlocked: false },
+                    { id: 'halfway', title: 'Meio Caminho', description: 'Complete 50% do curso', unlocked: false }
+                ];
+
+                const unlockedCount = achievements.filter(a => a.unlocked).length;
+                document.getElementById('achievementCount').textContent = `${unlockedCount}/${achievements.length}`;
+
+                const achievementsHTML = achievements.map(achievement => `
+                    <div class="achievement-item ${achievement.unlocked ? 'unlocked' : 'locked'}">
+                        <div class="achievement-icon">
+                            ${achievement.unlocked ? '🏆' : '🔒'}
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-title">${achievement.title}</div>
+                            <div class="achievement-description">${achievement.description}</div>
+                        </div>
+                    </div>
+                `).join('');
+
+                document.getElementById('achievementsGrid').innerHTML = achievementsHTML;
+            }
+
+            setupEventListeners() {
+                // Chart period buttons
+                document.querySelectorAll('.chart-period').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        document.querySelectorAll('.chart-period').forEach(b => b.classList.remove('active'));
+                        e.target.classList.add('active');
+                        this.updateChart(e.target.dataset.period);
+                    });
+                });
+
+                // Goals form
+                document.getElementById('goalsForm').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.saveGoals();
+                });
+            }
+
+            updateChart(period) {
+                // Update chart data based on selected period
+                let labels, data;
+                
+                switch(period) {
+                    case '7':
+                        labels = ['Ontem', 'Hoje'];
+                        data = [50, 65];
+                        break;
+                    case '30':
+                        labels = ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'];
+                        data = [20, 35, 50, 65];
+                        break;
+                    default:
+                        labels = ['1 Jan', '8 Jan', '15 Jan', '22 Jan', '29 Jan', '5 Fev', '12 Fev'];
+                        data = [0, 5, 12, 25, 35, 50, 65];
+                }
+                
+                this.progressChart.data.labels = labels;
+                this.progressChart.data.datasets[0].data = data;
+                this.progressChart.update();
+            }
+
+            saveGoals() {
+                const weeklyGoal = document.getElementById('weeklyGoal').value;
+                const dailyTime = document.getElementById('dailyTime').value;
+                const completionTarget = document.getElementById('completionTarget').value;
+                
+                const goals = {
+                    weeklyModules: parseInt(weeklyGoal),
+                    dailyMinutes: parseInt(dailyTime),
+                    targetCompletion: completionTarget
+                };
+                
+                localStorage.setItem('study-goals', JSON.stringify(goals));
+                closeGoalsModal();
+                
+                // Show success message
+                this.app.showAchievement('Metas de estudo atualizadas!');
+            }
+        }
+
+        // Global functions
+        function continueLearning() {
+            window.location.href = 'curso.html';
+        }
+
+        function openGoalsModal() {
+            document.getElementById('goalsModal').style.display = 'flex';
+        }
+
+        function closeGoalsModal() {
+            document.getElementById('goalsModal').style.display = 'none';
+        }
+
+        function previousMonth() {
+            // Implement month navigation
+            console.log('Previous month');
+        }
+
+        function nextMonth() {
+            // Implement month navigation
+            console.log('Next month');
+        }
+
+        // Initialize dashboard when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            new Dashboard();
+        });
+    </script>
+</body>
+</html>

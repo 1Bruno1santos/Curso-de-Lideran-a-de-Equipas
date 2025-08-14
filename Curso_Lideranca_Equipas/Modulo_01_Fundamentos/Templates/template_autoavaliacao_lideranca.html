@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template: Autoavaliação de Liderança</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { background: #667eea; color: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; text-align: center; }
+        h1 { margin: 0; font-size: 2em; }
+        .section { background: #f8f9ff; padding: 20px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #667eea; }
+        h2 { color: #667eea; margin-top: 0; }
+        .assessment-grid { display: grid; grid-template-columns: 3fr 1fr; gap: 20px; align-items: center; margin: 10px 0; padding: 15px; background: white; border-radius: 6px; }
+        .competency { font-weight: bold; }
+        .scale { text-align: center; }
+        .scale-legend { background: #e3f2fd; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .results { background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .action-plan { background: #e8f5e9; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        input[type="number"] { width: 60px; padding: 5px; text-align: center; border: 1px solid #ccc; border-radius: 4px; }
+        .calculate-btn { background: #667eea; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 10px 0; }
+        .calculate-btn:hover { background: #5a67d8; }
+        .result-box { padding: 15px; border-radius: 6px; margin: 10px 0; font-weight: bold; }
+        .excellent { background: #e8f5e9; color: #2e7d32; }
+        .good { background: #e3f2fd; color: #1976d2; }
+        .needs-improvement { background: #fff3e0; color: #f57c00; }
+        .critical { background: #ffebee; color: #d32f2f; }
+        @media print { .no-print { display: none; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Autoavaliação de Competências de Liderança</h1>
+        <p>Ferramenta de Diagnóstico Pessoal - Módulo 1</p>
+    </div>
+
+    <div class="scale-legend">
+        <h3>📊 Escala de Avaliação</h3>
+        <p><strong>1 - Iniciante:</strong> Conhecimento limitado, precisa de orientação constante</p>
+        <p><strong>2 - Básico:</strong> Compreensão fundamental, aplicação ocasional</p>
+        <p><strong>3 - Competente:</strong> Boa compreensão, aplicação consistente, trabalho independente</p>
+        <p><strong>4 - Proficiente:</strong> Competência avançada, ensina outros, inovação ocasional</p>
+        <p><strong>5 - Expert:</strong> Domínio especializado, referência na área, inovação constante</p>
+    </div>
+
+    <div class="section">
+        <h2>🎯 DIMENSÃO ESTRATÉGICA</h2>
+        <p><em>Competências para navegar complexidade e criar futuro</em></p>
+        
+        <div class="assessment-grid">
+            <div class="competency">Pensamento Estratégico</div>
+            <div class="scale">
+                <input type="number" id="strategic-thinking" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Visão e Direcionamento</div>
+            <div class="scale">
+                <input type="number" id="vision" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Inovação e Criatividade</div>
+            <div class="scale">
+                <input type="number" id="innovation" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Análise de Cenários</div>
+            <div class="scale">
+                <input type="number" id="scenario-analysis" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Tomada de Decisão Complexa</div>
+            <div class="scale">
+                <input type="number" id="complex-decisions" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>👥 DIMENSÃO INTERPESSOAL</h2>
+        <p><em>Competências para inspirar e desenvolver pessoas</em></p>
+        
+        <div class="assessment-grid">
+            <div class="competency">Inteligência Emocional</div>
+            <div class="scale">
+                <input type="number" id="emotional-intelligence" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Comunicação Eficaz</div>
+            <div class="scale">
+                <input type="number" id="communication" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Influência sem Autoridade</div>
+            <div class="scale">
+                <input type="number" id="influence" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Coaching e Mentoring</div>
+            <div class="scale">
+                <input type="number" id="coaching" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Gestão de Conflitos</div>
+            <div class="scale">
+                <input type="number" id="conflict-management" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>⚡ DIMENSÃO EXECUÇÃO</h2>
+        <p><em>Competências para entregar resultados consistentes</em></p>
+        
+        <div class="assessment-grid">
+            <div class="competency">Gestão de Performance</div>
+            <div class="scale">
+                <input type="number" id="performance-management" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Orientação para Resultados</div>
+            <div class="scale">
+                <input type="number" id="results-orientation" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Gestão de Projetos</div>
+            <div class="scale">
+                <input type="number" id="project-management" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Accountability</div>
+            <div class="scale">
+                <input type="number" id="accountability" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Otimização de Processos</div>
+            <div class="scale">
+                <input type="number" id="process-optimization" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🌱 DIMENSÃO PESSOAL</h2>
+        <p><em>Competências para autodomínio e crescimento contínuo</em></p>
+        
+        <div class="assessment-grid">
+            <div class="competency">Autoconsciência</div>
+            <div class="scale">
+                <input type="number" id="self-awareness" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Autorregulação</div>
+            <div class="scale">
+                <input type="number" id="self-regulation" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Resiliência e Adaptabilidade</div>
+            <div class="scale">
+                <input type="number" id="resilience" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Learning Agility</div>
+            <div class="scale">
+                <input type="number" id="learning-agility" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+        
+        <div class="assessment-grid">
+            <div class="competency">Integridade e Ética</div>
+            <div class="scale">
+                <input type="number" id="integrity" min="1" max="5" placeholder="1-5"> / 5
+            </div>
+        </div>
+    </div>
+
+    <div class="no-print">
+        <button class="calculate-btn" onclick="calculateResults()">📊 Calcular Resultados</button>
+    </div>
+
+    <div class="results" id="results" style="display: none;">
+        <h2>📊 Resultados da Autoavaliação</h2>
+        
+        <div id="overall-score" class="result-box"></div>
+        
+        <h3>📈 Pontuação por Dimensão:</h3>
+        <div id="dimension-scores"></div>
+        
+        <h3>💪 Pontos Fortes (4-5 pontos):</h3>
+        <div id="strengths"></div>
+        
+        <h3>🎯 Áreas de Desenvolvimento (1-2 pontos):</h3>
+        <div id="development-areas"></div>
+        
+        <h3>⚖️ Oportunidades de Melhoria (3 pontos):</h3>
+        <div id="improvement-areas"></div>
+    </div>
+
+    <div class="action-plan">
+        <h2>🎯 Plano de Ação Personalizado</h2>
+        
+        <h3>📝 Baseado nos seus resultados, complete:</h3>
+        
+        <p><strong>1. Minhas 3 competências mais fortes:</strong></p>
+        <p>a) ________________________</p>
+        <p>b) ________________________</p>
+        <p>c) ________________________</p>
+        
+        <p><strong>2. Minhas 3 principais áreas de desenvolvimento:</strong></p>
+        <p>a) ________________________</p>
+        <p>b) ________________________</p>
+        <p>c) ________________________</p>
+        
+        <p><strong>3. Competências prioritárias para os próximos 90 dias:</strong></p>
+        <p>Competência 1: ________________________</p>
+        <p>Estratégia de desenvolvimento: ________________________</p>
+        <p>Métrica de progresso: ________________________</p>
+        
+        <p>Competência 2: ________________________</p>
+        <p>Estratégia de desenvolvimento: ________________________</p>
+        <p>Métrica de progresso: ________________________</p>
+        
+        <p><strong>4. Como vou alavancar meus pontos fortes:</strong></p>
+        <p>________________________</p>
+        
+        <p><strong>5. Recursos que preciso (mentor, curso, projeto):</strong></p>
+        <p>________________________</p>
+        
+        <p><strong>6. Data da próxima autoavaliação:</strong> ___/___/___</p>
+    </div>
+
+    <script>
+        function calculateResults() {
+            const competencies = [
+                {id: 'strategic-thinking', name: 'Pensamento Estratégico', dimension: 'Estratégica'},
+                {id: 'vision', name: 'Visão e Direcionamento', dimension: 'Estratégica'},
+                {id: 'innovation', name: 'Inovação e Criatividade', dimension: 'Estratégica'},
+                {id: 'scenario-analysis', name: 'Análise de Cenários', dimension: 'Estratégica'},
+                {id: 'complex-decisions', name: 'Tomada de Decisão Complexa', dimension: 'Estratégica'},
+                {id: 'emotional-intelligence', name: 'Inteligência Emocional', dimension: 'Interpessoal'},
+                {id: 'communication', name: 'Comunicação Eficaz', dimension: 'Interpessoal'},
+                {id: 'influence', name: 'Influência sem Autoridade', dimension: 'Interpessoal'},
+                {id: 'coaching', name: 'Coaching e Mentoring', dimension: 'Interpessoal'},
+                {id: 'conflict-management', name: 'Gestão de Conflitos', dimension: 'Interpessoal'},
+                {id: 'performance-management', name: 'Gestão de Performance', dimension: 'Execução'},
+                {id: 'results-orientation', name: 'Orientação para Resultados', dimension: 'Execução'},
+                {id: 'project-management', name: 'Gestão de Projetos', dimension: 'Execução'},
+                {id: 'accountability', name: 'Accountability', dimension: 'Execução'},
+                {id: 'process-optimization', name: 'Otimização de Processos', dimension: 'Execução'},
+                {id: 'self-awareness', name: 'Autoconsciência', dimension: 'Pessoal'},
+                {id: 'self-regulation', name: 'Autorregulação', dimension: 'Pessoal'},
+                {id: 'resilience', name: 'Resiliência e Adaptabilidade', dimension: 'Pessoal'},
+                {id: 'learning-agility', name: 'Learning Agility', dimension: 'Pessoal'},
+                {id: 'integrity', name: 'Integridade e Ética', dimension: 'Pessoal'}
+            ];
+            
+            let totalScore = 0;
+            let validScores = 0;
+            let dimensionScores = {
+                'Estratégica': {total: 0, count: 0},
+                'Interpessoal': {total: 0, count: 0},
+                'Execução': {total: 0, count: 0},
+                'Pessoal': {total: 0, count: 0}
+            };
+            
+            let strengths = [];
+            let developmentAreas = [];
+            let improvementAreas = [];
+            
+            competencies.forEach(comp => {
+                const value = parseInt(document.getElementById(comp.id).value);
+                if (value >= 1 && value <= 5) {
+                    totalScore += value;
+                    validScores++;
+                    dimensionScores[comp.dimension].total += value;
+                    dimensionScores[comp.dimension].count++;
+                    
+                    if (value >= 4) {
+                        strengths.push(comp.name);
+                    } else if (value <= 2) {
+                        developmentAreas.push(comp.name);
+                    } else if (value === 3) {
+                        improvementAreas.push(comp.name);
+                    }
+                }
+            });
+            
+            if (validScores === 0) {
+                alert('Por favor, preencha pelo menos uma competência para calcular os resultados.');
+                return;
+            }
+            
+            const averageScore = (totalScore / validScores).toFixed(1);
+            
+            // Show results
+            document.getElementById('results').style.display = 'block';
+            
+            // Overall score
+            let scoreClass = '';
+            let scoreText = '';
+            if (averageScore >= 4.0) {
+                scoreClass = 'excellent';
+                scoreText = 'Excelente! Perfil de liderança muito forte.';
+            } else if (averageScore >= 3.5) {
+                scoreClass = 'good';
+                scoreText = 'Bom! Competências sólidas de liderança.';
+            } else if (averageScore >= 2.5) {
+                scoreClass = 'needs-improvement';
+                scoreText = 'Em desenvolvimento. Foque nas áreas prioritárias.';
+            } else {
+                scoreClass = 'critical';
+                scoreText = 'Iniciante. Grande oportunidade de crescimento.';
+            }
+            
+            document.getElementById('overall-score').className = `result-box ${scoreClass}`;
+            document.getElementById('overall-score').innerHTML = `<strong>Pontuação Geral: ${averageScore}/5.0</strong><br>${scoreText}`;
+            
+            // Dimension scores
+            let dimensionHtml = '';
+            Object.keys(dimensionScores).forEach(dimension => {
+                const dimData = dimensionScores[dimension];
+                if (dimData.count > 0) {
+                    const dimAverage = (dimData.total / dimData.count).toFixed(1);
+                    dimensionHtml += `<p><strong>${dimension}:</strong> ${dimAverage}/5.0</p>`;
+                }
+            });
+            document.getElementById('dimension-scores').innerHTML = dimensionHtml;
+            
+            // Strengths, development areas, improvement areas
+            document.getElementById('strengths').innerHTML = strengths.length > 0 ? 
+                `<ul>${strengths.map(s => `<li>${s}</li>`).join('')}</ul>` : 
+                '<p>Nenhuma competência identificada como ponto forte (4-5 pontos).</p>';
+                
+            document.getElementById('development-areas').innerHTML = developmentAreas.length > 0 ? 
+                `<ul>${developmentAreas.map(d => `<li>${d}</li>`).join('')}</ul>` : 
+                '<p>Nenhuma competência identificada como área crítica de desenvolvimento.</p>';
+                
+            document.getElementById('improvement-areas').innerHTML = improvementAreas.length > 0 ? 
+                `<ul>${improvementAreas.map(i => `<li>${i}</li>`).join('')}</ul>` : 
+                '<p>Nenhuma competência identificada como oportunidade de melhoria.</p>';
+            
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+
+    <div style="text-align: center; margin-top: 40px; padding: 20px; background: #f0f4ff; border-radius: 8px;">
+        <p><strong>📅 Data da Avaliação:</strong> ___/___/___</p>
+        <p><strong>👤 Nome:</strong> ________________________</p>
+        <p><strong>💼 Função Atual:</strong> ________________________</p>
+        <p><em>Salve este template preenchido para acompanhar sua evolução ao longo do tempo.</em></p>
+    </div>
+</body>
+</html>

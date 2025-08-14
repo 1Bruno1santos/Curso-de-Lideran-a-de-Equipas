@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lição 2.2: Estilos Adaptativos de Liderança - DieselFormações</title>
+    <meta name="description" content="Domine os 4 estilos adaptativos de liderança: Diretivo, Consultivo, Participativo e Delegativo">
+    
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="lesson-header">
+        <div class="container">
+            <div class="lesson-nav">
+                <a href="../../curso.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Voltar ao Curso</span>
+                </a>
+                <div class="lesson-info">
+                    <span class="module-tag">Módulo 2 - Lição 2</span>
+                    <h1>Estilos Adaptativos de Liderança</h1>
+                </div>
+                <div class="lesson-actions">
+                    <button class="btn-icon bookmark-btn" title="Marcar como favorito">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                    <button class="btn-icon share-btn" title="Partilhar">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="lesson-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Lesson Sidebar -->
+                <aside class="lesson-sidebar">
+                    <div class="progress-panel">
+                        <div class="module-progress">
+                            <h4>Progresso do Módulo 2</h4>
+                            <div class="progress-circle-small">
+                                <svg width="60" height="60">
+                                    <circle cx="30" cy="30" r="25" stroke="#e5e7eb" stroke-width="4" fill="none"/>
+                                    <circle cx="30" cy="30" r="25" stroke="var(--primary-color)" stroke-width="4" 
+                                            fill="none" stroke-dasharray="157" stroke-dashoffset="94" class="progress-fill"/>
+                                </svg>
+                                <span class="progress-text">40%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="lesson-list">
+                            <h4>Lições do Módulo</h4>
+                            <a href="modulo2_introducao.html" class="lesson-item completed">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Introdução ao Módulo</span>
+                                <i class="fas fa-check completed-icon"></i>
+                            </a>
+                            <a href="licao2_1.html" class="lesson-item completed">
+                                <i class="fas fa-book"></i>
+                                <span>Liderança Situacional</span>
+                                <i class="fas fa-check completed-icon"></i>
+                            </a>
+                            <a href="licao2_2.html" class="lesson-item active">
+                                <i class="fas fa-adjust"></i>
+                                <span>Estilos Adaptativos</span>
+                                <i class="fas fa-play current-icon"></i>
+                            </a>
+                            <a href="licao2_3.html" class="lesson-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Modelo Hersey-Blanchard</span>
+                            </a>
+                            <a href="licao2_4.html" class="lesson-item">
+                                <i class="fas fa-users-cog"></i>
+                                <span>Coaching vs Delegação</span>
+                            </a>
+                            <a href="licao2_5.html" class="lesson-item">
+                                <i class="fas fa-compass"></i>
+                                <span>Aplicação Prática</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Article -->
+                <article class="lesson-article">
+                    <div class="article-header">
+                        <div class="breadcrumb">
+                            <a href="../../curso.html">Curso</a>
+                            <span>›</span>
+                            <a href="modulo2_introducao.html">Módulo 2</a>
+                            <span>›</span>
+                            <span>Estilos Adaptativos</span>
+                        </div>
+                        <h1>Os 4 Estilos Adaptativos de Liderança</h1>
+                        <div class="article-meta">
+                            <span class="read-time">
+                                <i class="fas fa-clock"></i>
+                                18 min de leitura
+                            </span>
+                            <span class="lesson-type">
+                                <i class="fas fa-tools"></i>
+                                Prático
+                            </span>
+                            <span class="difficulty">
+                                <i class="fas fa-signal"></i>
+                                Intermédio
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="article-content">
+                        <!-- Introduction -->
+                        <section class="content-section">
+                            <div class="lesson-intro">
+                                <h2>🎯 Objetivos desta Lição</h2>
+                                <ul class="objectives-list">
+                                    <li>Dominar os 4 estilos fundamentais de liderança adaptativa</li>
+                                    <li>Compreender quando aplicar cada estilo específico</li>
+                                    <li>Desenvolver a capacidade de transição fluida entre estilos</li>
+                                    <li>Identificar as vantagens e riscos de cada abordagem</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Core Content -->
+                        <section class="content-section">
+                            <h2>Os 4 Estilos Fundamentais</h2>
+                            <p class="intro-paragraph">
+                                Com base na teoria da Liderança Situacional, existem <strong>4 estilos fundamentais</strong> 
+                                que correspondem aos diferentes níveis de desenvolvimento dos colaboradores. Cada estilo 
+                                combina duas dimensões comportamentais: <strong>Comportamento Diretivo</strong> e 
+                                <strong>Comportamento de Apoio</strong>.
+                            </p>
+
+                            <div class="styles-matrix">
+                                <div class="matrix-header">
+                                    <h4>Matriz dos Estilos de Liderança</h4>
+                                    <p>Baseada no nível de direção e apoio fornecido</p>
+                                </div>
+                                <div class="matrix-grid">
+                                    <div class="axis-label vertical">
+                                        <span>Comportamento de Apoio</span>
+                                        <div class="axis-arrow">↑</div>
+                                        <span class="axis-high">Alto</span>
+                                        <span class="axis-low">Baixo</span>
+                                    </div>
+                                    <div class="matrix-content">
+                                        <div class="quadrant s3">
+                                            <div class="style-label">S3</div>
+                                            <h5>Participativo</h5>
+                                            <p>Alto Apoio<br>Baixa Direção</p>
+                                        </div>
+                                        <div class="quadrant s2">
+                                            <div class="style-label">S2</div>
+                                            <h5>Consultivo</h5>
+                                            <p>Alto Apoio<br>Alta Direção</p>
+                                        </div>
+                                        <div class="quadrant s4">
+                                            <div class="style-label">S4</div>
+                                            <h5>Delegativo</h5>
+                                            <p>Baixo Apoio<br>Baixa Direção</p>
+                                        </div>
+                                        <div class="quadrant s1">
+                                            <div class="style-label">S1</div>
+                                            <h5>Diretivo</h5>
+                                            <p>Baixo Apoio<br>Alta Direção</p>
+                                        </div>
+                                    </div>
+                                    <div class="axis-label horizontal">
+                                        <span class="axis-low">Baixo</span>
+                                        <span class="axis-high">Alto</span>
+                                        <div class="axis-arrow">→</div>
+                                        <span>Comportamento Diretivo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Style 1: Directive -->
+                        <section class="content-section">
+                            <div class="style-detailed s1-style">
+                                <div class="style-header">
+                                    <div class="style-icon">
+                                        <i class="fas fa-bullhorn"></i>
+                                    </div>
+                                    <div class="style-title">
+                                        <h2>S1 - Estilo Diretivo</h2>
+                                        <p class="style-subtitle">Alta Direção + Baixo Apoio</p>
+                                    </div>
+                                </div>
+
+                                <div class="style-content">
+                                    <div class="style-description">
+                                        <h4>Características Principais:</h4>
+                                        <ul>
+                                            <li><strong>Comunicação unidirecional</strong> - o líder define o que, como, quando e onde</li>
+                                            <li><strong>Supervisão próxima</strong> - acompanhamento constante da execução</li>
+                                            <li><strong>Instruções específicas</strong> - procedimentos detalhados e claros</li>
+                                            <li><strong>Tomada de decisão centralizada</strong> - o líder decide sozinho</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="when-to-use">
+                                        <h4>🎯 Quando Usar:</h4>
+                                        <ul>
+                                            <li>Colaboradores novos sem experiência (D1)</li>
+                                            <li>Situações de crise que exigem ação imediata</li>
+                                            <li>Tarefas com alto risco de erro</li>
+                                            <li>Procedimentos muito específicos ou regulamentados</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="style-example">
+                                        <h4>💼 Exemplo Prático:</h4>
+                                        <div class="example-box">
+                                            <p>
+                                                <strong>Situação:</strong> Treinar um novo colaborador nos procedimentos de segurança.<br>
+                                                <strong>Abordagem:</strong> "Primeiro, coloque o equipamento de proteção desta forma específica. 
+                                                Depois, siga exatamente estes 5 passos. Vou acompanhar até ter certeza de que domina o procedimento."
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="pros-cons">
+                                        <div class="pros">
+                                            <h5>✅ Vantagens:</h5>
+                                            <ul>
+                                                <li>Resultados rápidos e previsíveis</li>
+                                                <li>Redução de erros iniciais</li>
+                                                <li>Clareza total de expectativas</li>
+                                                <li>Eficaz em situações de urgência</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cons">
+                                            <h5>⚠️ Riscos:</h5>
+                                            <ul>
+                                                <li>Pode sufocar a criatividade</li>
+                                                <li>Dependência excessiva do líder</li>
+                                                <li>Baixa motivação a longo prazo</li>
+                                                <li>Não desenvolve autonomia</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Style 2: Coaching -->
+                        <section class="content-section">
+                            <div class="style-detailed s2-style">
+                                <div class="style-header">
+                                    <div class="style-icon">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                    </div>
+                                    <div class="style-title">
+                                        <h2>S2 - Estilo Consultivo (Coaching)</h2>
+                                        <p class="style-subtitle">Alta Direção + Alto Apoio</p>
+                                    </div>
+                                </div>
+
+                                <div class="style-content">
+                                    <div class="style-description">
+                                        <h4>Características Principais:</h4>
+                                        <ul>
+                                            <li><strong>Comunicação bidireccional</strong> - explica decisões e ouve feedback</li>
+                                            <li><strong>Ensino ativo</strong> - explica o "porquê" das tarefas</li>
+                                            <li><strong>Apoio emocional</strong> - encoraja e motiva</li>
+                                            <li><strong>Desenvolvimento gradual</strong> - aumenta responsabilidade aos poucos</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="when-to-use">
+                                        <h4>🎯 Quando Usar:</h4>
+                                        <ul>
+                                            <li>Colaboradores desmotivados com alguma competência (D2)</li>
+                                            <li>Implementação de mudanças organizacionais</li>
+                                            <li>Desenvolvimento de novas competências</li>
+                                            <li>Recuperação após insucesso ou desmotivação</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="style-example">
+                                        <h4>💼 Exemplo Prático:</h4>
+                                        <div class="example-box">
+                                            <p>
+                                                <strong>Situação:</strong> Colaborador com conhecimento técnico mas desmotivado após erros recentes.<br>
+                                                <strong>Abordagem:</strong> "Compreendo a sua frustração. Vamos analisar juntos o que aconteceu e 
+                                                criar um plano para evitar estes problemas. Tenho confiança na sua capacidade - vou apoiá-lo neste processo."
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="pros-cons">
+                                        <div class="pros">
+                                            <h5>✅ Vantagens:</h5>
+                                            <ul>
+                                                <li>Reconstrói confiança e motivação</li>
+                                                <li>Desenvolve competências rapidamente</li>
+                                                <li>Melhora a relação líder-colaborador</li>
+                                                <li>Equilibra direção com apoio</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cons">
+                                            <h5>⚠️ Riscos:</h5>
+                                            <ul>
+                                                <li>Consome muito tempo do líder</li>
+                                                <li>Pode criar dependência emocional</li>
+                                                <li>Requer grande habilidade de comunicação</li>
+                                                <li>Nem todos respondem bem ao coaching</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Style 3: Supporting -->
+                        <section class="content-section">
+                            <div class="style-detailed s3-style">
+                                <div class="style-header">
+                                    <div class="style-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="style-title">
+                                        <h2>S3 - Estilo Participativo (Apoio)</h2>
+                                        <p class="style-subtitle">Baixa Direção + Alto Apoio</p>
+                                    </div>
+                                </div>
+
+                                <div class="style-content">
+                                    <div class="style-description">
+                                        <h4>Características Principais:</h4>
+                                        <ul>
+                                            <li><strong>Decisões partilhadas</strong> - colaborador participa ativamente</li>
+                                            <li><strong>Facilitação ativa</strong> - líder facilita o processo de tomada de decisão</li>
+                                            <li><strong>Encorajamento</strong> - foco no apoio emocional e confiança</li>
+                                            <li><strong>Escuta ativa</strong> - valoriza ideias e opiniões</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="when-to-use">
+                                        <h4>🎯 Quando Usar:</h4>
+                                        <ul>
+                                            <li>Colaboradores competentes mas inseguros (D3)</li>
+                                            <li>Situações que beneficiam de perspetivas múltiplas</li>
+                                            <li>Desenvolvimento de confiança e autonomia</li>
+                                            <li>Projetos criativos ou inovadores</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="style-example">
+                                        <h4>💼 Exemplo Prático:</h4>
+                                        <div class="example-box">
+                                            <p>
+                                                <strong>Situação:</strong> Especialista técnico hesitante sobre liderar um projeto complexo.<br>
+                                                <strong>Abordagem:</strong> "Qual é a sua opinião sobre a melhor abordagem? Conhece bem esta área. 
+                                                Que recursos precisaria? Estou aqui para apoiar as suas decisões e remover obstáculos."
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="pros-cons">
+                                        <div class="pros">
+                                            <h5>✅ Vantagens:</h5>
+                                            <ul>
+                                                <li>Constrói confiança e autonomia</li>
+                                                <li>Aproveita conhecimento especializado</li>
+                                                <li>Aumenta comprometimento com decisões</li>
+                                                <li>Desenvolve capacidade de liderança</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cons">
+                                            <h5>⚠️ Riscos:</h5>
+                                            <ul>
+                                                <li>Processo de decisão mais lento</li>
+                                                <li>Pode levar a indecisão prolongada</li>
+                                                <li>Requer maturidade do colaborador</li>
+                                                <li>Risco de evitar decisões difíceis</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Style 4: Delegating -->
+                        <section class="content-section">
+                            <div class="style-detailed s4-style">
+                                <div class="style-header">
+                                    <div class="style-icon">
+                                        <i class="fas fa-hand-point-right"></i>
+                                    </div>
+                                    <div class="style-title">
+                                        <h2>S4 - Estilo Delegativo</h2>
+                                        <p class="style-subtitle">Baixa Direção + Baixo Apoio</p>
+                                    </div>
+                                </div>
+
+                                <div class="style-content">
+                                    <div class="style-description">
+                                        <h4>Características Principais:</h4>
+                                        <ul>
+                                            <li><strong>Autonomia total</strong> - colaborador toma decisões independentemente</li>
+                                            <li><strong>Supervisão mínima</strong> - acompanhamento apenas de resultados</li>
+                                            <li><strong>Recursos disponíveis</strong> - garante que tem o necessário para executar</li>
+                                            <li><strong>Accountability</strong> - responsabilização clara pelos resultados</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="when-to-use">
+                                        <h4>🎯 Quando Usar:</h4>
+                                        <ul>
+                                            <li>Colaboradores altamente competentes e motivados (D4)</li>
+                                            <li>Tarefas dentro da área de especialização</li>
+                                            <li>Projetos com objetivos claros e bem definidos</li>
+                                            <li>Situações que beneficiam de independência total</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="style-example">
+                                        <h4>💼 Exemplo Prático:</h4>
+                                        <div class="example-box">
+                                            <p>
+                                                <strong>Situação:</strong> Especialista sénior responsável por implementar nova tecnologia.<br>
+                                                <strong>Abordagem:</strong> "O objetivo é ter o sistema funcionando até ao final do trimestre. 
+                                                Tem orçamento de €50k e acesso total aos recursos necessários. 
+                                                Informe-me apenas dos marcos principais."
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="pros-cons">
+                                        <div class="pros">
+                                            <h5>✅ Vantagens:</h5>
+                                            <ul>
+                                                <li>Máxima eficiência e rapidez</li>
+                                                <li>Liberta tempo do líder para outras tarefas</li>
+                                                <li>Alta motivação e satisfação</li>
+                                                <li>Desenvolve líderes futuros</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cons">
+                                            <h5>⚠️ Riscos:</h5>
+                                            <ul>
+                                                <li>Perda de controlo sobre detalhes</li>
+                                                <li>Possível desalinhamento com objetivos</li>
+                                                <li>Requer sistemas de monitorização</li>
+                                                <li>Só funciona com pessoas muito competentes</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Matching Exercise -->
+                        <section class="content-section exercise-section">
+                            <h2>🎯 Exercício: Correspondência Estilo-Situação</h2>
+                            <div class="matching-exercise">
+                                <p>Faça a correspondência entre as situações e o estilo mais adequado:</p>
+                                
+                                <div class="matching-container">
+                                    <div class="situations">
+                                        <h4>Situações:</h4>
+                                        <div class="situation-item" draggable="true" data-answer="S1">
+                                            <span class="situation-number">A</span>
+                                            <p>Estagiário no primeiro dia de trabalho</p>
+                                        </div>
+                                        <div class="situation-item" draggable="true" data-answer="S2">
+                                            <span class="situation-number">B</span>
+                                            <p>Colaborador experiente que cometeu erros recentes</p>
+                                        </div>
+                                        <div class="situation-item" draggable="true" data-answer="S3">
+                                            <span class="situation-number">C</span>
+                                            <p>Especialista técnico inseguro sobre gestão</p>
+                                        </div>
+                                        <div class="situation-item" draggable="true" data-answer="S4">
+                                            <span class="situation-number">D</span>
+                                            <p>Gestor sénior em projeto da sua especialidade</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="styles">
+                                        <h4>Estilos:</h4>
+                                        <div class="style-drop-zone" data-style="S1">
+                                            <div class="style-header">S1 - Diretivo</div>
+                                            <div class="drop-area">Arraste aqui</div>
+                                        </div>
+                                        <div class="style-drop-zone" data-style="S2">
+                                            <div class="style-header">S2 - Consultivo</div>
+                                            <div class="drop-area">Arraste aqui</div>
+                                        </div>
+                                        <div class="style-drop-zone" data-style="S3">
+                                            <div class="style-header">S3 - Participativo</div>
+                                            <div class="drop-area">Arraste aqui</div>
+                                        </div>
+                                        <div class="style-drop-zone" data-style="S4">
+                                            <div class="style-header">S4 - Delegativo</div>
+                                            <div class="drop-area">Arraste aqui</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="exercise-buttons">
+                                    <button id="checkAnswers" class="btn btn-primary">Verificar Respostas</button>
+                                    <button id="resetExercise" class="btn btn-outline">Recomeçar</button>
+                                </div>
+                                
+                                <div id="exerciseResults" class="exercise-results" style="display: none;"></div>
+                            </div>
+                        </section>
+
+                        <!-- Key Takeaways -->
+                        <section class="content-section takeaways-section">
+                            <h2>🎯 Pontos-Chave desta Lição</h2>
+                            <div class="takeaways-grid">
+                                <div class="takeaway-item">
+                                    <div class="takeaway-number">1</div>
+                                    <p>Cada estilo combina diferentes níveis de direção e apoio para situações específicas</p>
+                                </div>
+                                <div class="takeaway-item">
+                                    <div class="takeaway-number">2</div>
+                                    <p>O estilo Diretivo é essencial para principiantes e situações de crise</p>
+                                </div>
+                                <div class="takeaway-item">
+                                    <div class="takeaway-number">3</div>
+                                    <p>O estilo Consultivo reconstrói motivação através de coaching ativo</p>
+                                </div>
+                                <div class="takeaway-item">
+                                    <div class="takeaway-number">4</div>
+                                    <p>Estilos Participativo e Delegativo desenvolvem autonomia e liderança</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Navigation Footer -->
+                    <div class="lesson-navigation">
+                        <div class="nav-previous">
+                            <a href="licao2_1.html" class="nav-link">
+                                <i class="fas fa-arrow-left"></i>
+                                <div class="nav-content">
+                                    <span class="nav-label">Anterior</span>
+                                    <span class="nav-title">Liderança Situacional</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="nav-next">
+                            <a href="licao2_3.html" class="nav-link">
+                                <div class="nav-content">
+                                    <span class="nav-label">Próximo</span>
+                                    <span class="nav-title">Modelo Hersey-Blanchard</span>
+                                </div>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="../../js/app.js"></script>
+    <script>
+        // Drag and Drop Exercise
+        document.addEventListener('DOMContentLoaded', function() {
+            const situations = document.querySelectorAll('.situation-item');
+            const dropZones = document.querySelectorAll('.style-drop-zone');
+            const checkBtn = document.getElementById('checkAnswers');
+            const resetBtn = document.getElementById('resetExercise');
+            let draggedElement = null;
+            
+            // Add drag and drop functionality
+            situations.forEach(situation => {
+                situation.addEventListener('dragstart', function(e) {
+                    draggedElement = this;
+                    this.style.opacity = '0.5';
+                });
+                
+                situation.addEventListener('dragend', function(e) {
+                    this.style.opacity = '1';
+                });
+            });
+            
+            dropZones.forEach(zone => {
+                zone.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    this.classList.add('drag-over');
+                });
+                
+                zone.addEventListener('dragleave', function(e) {
+                    this.classList.remove('drag-over');
+                });
+                
+                zone.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    this.classList.remove('drag-over');
+                    
+                    if (draggedElement) {
+                        const dropArea = this.querySelector('.drop-area');
+                        
+                        // Clear previous content
+                        dropArea.innerHTML = '';
+                        
+                        // Add the dragged element
+                        const clone = draggedElement.cloneNode(true);
+                        clone.style.opacity = '1';
+                        clone.draggable = false;
+                        dropArea.appendChild(clone);
+                        
+                        // Hide original
+                        draggedElement.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Check answers
+            checkBtn.addEventListener('click', function() {
+                checkExerciseAnswers();
+            });
+            
+            // Reset exercise
+            resetBtn.addEventListener('click', function() {
+                resetExercise();
+            });
+        });
+        
+        function checkExerciseAnswers() {
+            const dropZones = document.querySelectorAll('.style-drop-zone');
+            const results = document.getElementById('exerciseResults');
+            let correct = 0;
+            let total = 4;
+            let feedback = '<h4>Resultados:</h4>';
+            
+            dropZones.forEach(zone => {
+                const style = zone.dataset.style;
+                const droppedItem = zone.querySelector('.situation-item');
+                
+                if (droppedItem) {
+                    const correctAnswer = droppedItem.dataset.answer;
+                    const isCorrect = style === correctAnswer;
+                    
+                    if (isCorrect) {
+                        correct++;
+                        zone.classList.add('correct');
+                        feedback += `<p class="feedback-correct">✅ ${style}: Correto!</p>`;
+                    } else {
+                        zone.classList.add('incorrect');
+                        feedback += `<p class="feedback-incorrect">❌ ${style}: Incorreto. A resposta correta seria ${correctAnswer}.</p>`;
+                    }
+                }
+            });
+            
+            const percentage = Math.round((correct / total) * 100);
+            feedback = `<div class="score-summary">Pontuação: ${correct}/${total} (${percentage}%)</div>` + feedback;
+            
+            results.innerHTML = feedback;
+            results.style.display = 'block';
+        }
+        
+        function resetExercise() {
+            // Clear all drop zones
+            document.querySelectorAll('.drop-area').forEach(area => {
+                area.innerHTML = 'Arraste aqui';
+            });
+            
+            // Show all situations
+            document.querySelectorAll('.situation-item').forEach(situation => {
+                situation.style.display = 'flex';
+            });
+            
+            // Clear styling
+            document.querySelectorAll('.style-drop-zone').forEach(zone => {
+                zone.classList.remove('correct', 'incorrect');
+            });
+            
+            // Hide results
+            document.getElementById('exerciseResults').style.display = 'none';
+        }
+        
+        // Mark lesson as completed
+        let hasCompleted = false;
+        window.addEventListener('scroll', function() {
+            if (!hasCompleted && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+                hasCompleted = true;
+                if (typeof app !== 'undefined') {
+                    app.markLessonComplete(2, 2);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

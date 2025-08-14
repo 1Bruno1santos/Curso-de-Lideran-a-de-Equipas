@@ -1,0 +1,377 @@
+{
+  "quiz": {
+    "title": "Quiz do Módulo 1: Fundamentos da Liderança",
+    "description": "Teste seus conhecimentos sobre os fundamentos essenciais da liderança moderna. Este quiz abrange história da liderança, diferenças entre líder e gestor, e competências essenciais.",
+    "instructions": "Leia cada questão cuidadosamente e selecione a melhor resposta. Você tem 45 minutos para completar o quiz e precisa de 70% para passar.",
+    "time_limit": 45,
+    "passing_score": 70,
+    "show_results": true,
+    "randomize_questions": true,
+    "total_questions": 20,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple_choice",
+        "question": "Qual é a principal diferença entre liderança na Era Tribal e na Era Digital?",
+        "options": [
+          "Na Era Tribal, líderes eram escolhidos por força física; na Era Digital, por competências técnicas",
+          "Na Era Tribal, liderança era situacional; na Era Digital, é sempre colaborativa",
+          "Na Era Tribal, líderes protegiam o grupo; na Era Digital, criam valor para stakeholders",
+          "Na Era Tribal, não havia liderança formal; na Era Digital, é sempre hierárquica"
+        ],
+        "correct_answer": 2,
+        "points": 5,
+        "difficulty": "medium",
+        "learning_objective": "Compreender evolução histórica da liderança",
+        "feedback": {
+          "correct": "Excelente! A evolução da liderança mostra uma progressão da proteção física para criação de valor em ecosistemas complexos.",
+          "incorrect": "A principal evolução foi de proteger grupos pequenos para criar valor em sistemas complexos com múltiplos stakeholders."
+        }
+      },
+      {
+        "id": 2,
+        "type": "true_false",
+        "question": "Segundo a lição, gestores fazem as coisas corretamente enquanto líderes fazem as coisas certas.",
+        "correct_answer": true,
+        "points": 3,
+        "difficulty": "easy",
+        "learning_objective": "Distinguir entre liderança e gestão",
+        "feedback": {
+          "correct": "Correto! Esta é a distinção clássica de Warren Bennis - gestores focam eficiência (fazer certo) e líderes focam eficácia (fazer o certo).",
+          "incorrect": "Esta é a distinção fundamental: gestores otimizam execução (como fazer) enquanto líderes definem direção (o que fazer)."
+        }
+      },
+      {
+        "id": 3,
+        "type": "multiple_choice",
+        "question": "Qual situação requer primariamente competências de GESTÃO?",
+        "options": [
+          "Transformação cultural da organização",
+          "Crise operacional com sistemas em falha",
+          "Lançamento de produto inovador",
+          "Desenvolvimento de novos líderes"
+        ],
+        "correct_answer": 1,
+        "points": 4,
+        "difficulty": "medium",
+        "learning_objective": "Aplicar liderança situacional",
+        "feedback": {
+          "correct": "Perfeito! Crises operacionais requerem gestão primária: protocolos, coordenação, métricas e comunicação factual.",
+          "incorrect": "Crises operacionais necessitam de gestão eficaz: ativação de protocolos, coordenação logística e monitorização rigorosa."
+        }
+      },
+      {
+        "id": 4,
+        "type": "multiple_choice",
+        "question": "No framework das 4 dimensões de competências, qual dimensão inclui 'Coaching e Mentoring'?",
+        "options": [
+          "Dimensão Estratégica",
+          "Dimensão Interpessoal", 
+          "Dimensão de Execução",
+          "Dimensão Pessoal"
+        ],
+        "correct_answer": 1,
+        "points": 4,
+        "difficulty": "easy",
+        "learning_objective": "Identificar competências por dimensão",
+        "feedback": {
+          "correct": "Correto! Coaching e Mentoring são competências interpessoais focadas no desenvolvimento de pessoas.",
+          "incorrect": "Coaching e Mentoring pertencem à Dimensão Interpessoal, pois focam no desenvolvimento e relacionamento com pessoas."
+        }
+      },
+      {
+        "id": 5,
+        "type": "multiple_choice",
+        "question": "Qual característica melhor descreve um 'Leader-Manager' eficaz?",
+        "options": [
+          "Sempre usa liderança em todas as situações",
+          "Alterna fluidamente entre liderança e gestão conforme a situação",
+          "Delega toda gestão para focar apenas em liderança",
+          "Mantém separação rígida entre atividades de liderança e gestão"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "difficulty": "medium",
+        "learning_objective": "Compreender integração de liderança e gestão",
+        "feedback": {
+          "correct": "Excelente! O Leader-Manager eficaz adapta seu estilo à situação, integrando ambas competências fluidamente.",
+          "incorrect": "Leader-Managers eficazes dominam ambas competências e aplicam-nas situacionalmente, não rigidamente."
+        }
+      },
+      {
+        "id": 6,
+        "type": "multiple_choice",
+        "question": "Qual foi a principal contribuição de Steve Jobs para a compreensão moderna de liderança?",
+        "options": [
+          "Liderança através de processos estruturados",
+          "Visão disruptiva e perfecionismo na experiência do utilizador",
+          "Gestão participativa e consensual",
+          "Foco exclusivo em métricas financeiras"
+        ],
+        "correct_answer": 1,
+        "points": 4,
+        "difficulty": "medium",
+        "learning_objective": "Analisar lições de líderes históricos",
+        "feedback": {
+          "correct": "Perfeito! Jobs demonstrou como visão disruptiva e obsessão pela experiência podem transformar indústrias.",
+          "incorrect": "Jobs foi conhecido pela visão disruptiva e perfecionismo, antecipando necessidades que consumidores nem sabiam que tinham."
+        }
+      },
+      {
+        "id": 7,
+        "type": "true_false",
+        "question": "A Inteligência Emocional é considerada uma competência da Dimensão Pessoal no framework apresentado.",
+        "correct_answer": false,
+        "points": 3,
+        "difficulty": "easy",
+        "learning_objective": "Classificar competências corretamente",
+        "feedback": {
+          "correct": "Correto! Inteligência Emocional pertence à Dimensão Interpessoal, pois foca na gestão de emoções próprias e dos outros.",
+          "incorrect": "Inteligência Emocional é uma competência Interpessoal, não Pessoal, pois envolve gestão de relacionamentos e emoções dos outros."
+        }
+      },
+      {
+        "id": 8,
+        "type": "multiple_choice",
+        "question": "Qual princípio atemporal da liderança permanece relevante desde a antiguidade até hoje?",
+        "options": [
+          "Uso de tecnologia avançada",
+          "Estruturas hierárquicas rígidas",
+          "Comunicação eficaz e inspiradora",
+          "Foco exclusivo em resultados financeiros"
+        ],
+        "correct_answer": 2,
+        "points": 4,
+        "difficulty": "easy",
+        "learning_objective": "Identificar princípios atemporais",
+        "feedback": {
+          "correct": "Excelente! Comunicação eficaz atravessa todas as eras - de Churchill a líderes modernos.",
+          "incorrect": "Comunicação eficaz é um dos poucos princípios verdadeiramente atemporais, essencial em qualquer época ou contexto."
+        }
+      },
+      {
+        "id": 9,
+        "type": "multiple_choice",
+        "question": "No estudo de caso Churchill vs. Chamberlain, qual foi a principal lição sobre liderança situacional?",
+        "options": [
+          "Churchill era superior a Chamberlain em todas as situações",
+          "Diferentes contextos requerem diferentes estilos de liderança",
+          "Liderança autoritária é sempre mais eficaz que colaborativa",
+          "Líderes devem manter o mesmo estilo independentemente da situação"
+        ],
+        "correct_answer": 1,
+        "points": 5,
+        "difficulty": "medium",
+        "learning_objective": "Compreender liderança situacional",
+        "feedback": {
+          "correct": "Perfeito! O caso ilustra que diferentes situações (paz vs. guerra) requerem diferentes competências de liderança.",
+          "incorrect": "A lição principal é que eficácia da liderança depende do contexto - Chamberlain para paz, Churchill para guerra."
+        }
+      },
+      {
+        "id": 10,
+        "type": "multiple_choice",
+        "question": "Qual competência é considerada mais crítica para 'Liderança 4.0'?",
+        "options": [
+          "Gestão de processos tradicionais",
+          "Literacia em Inteligência Artificial",
+          "Controlo hierárquico rígido",
+          "Evitar tecnologias disruptivas"
+        ],
+        "correct_answer": 1,
+        "points": 4,
+        "difficulty": "medium",
+        "learning_objective": "Identificar competências digitais essenciais",
+        "feedback": {
+          "correct": "Correto! Literacia em IA é fundamental para líderes navegarem a transformação digital.",
+          "incorrect": "Liderança 4.0 requer compreensão de IA e outras tecnologias emergentes para tomar decisões informadas."
+        }
+      },
+      {
+        "id": 11,
+        "type": "true_false",
+        "question": "Segundo a lição, líderes eficazes devem focar em desenvolver todas as 20+ competências simultaneamente.",
+        "correct_answer": false,
+        "points": 3,
+        "difficulty": "easy",
+        "learning_objective": "Compreender estratégia de desenvolvimento",
+        "feedback": {
+          "correct": "Correto! A lição recomenda focar em 2-3 competências por vez para evitar dispersão e maximizar impacto.",
+          "incorrect": "A abordagem recomendada é focar em 2-3 competências por vez, priorizando baseado em gaps e contexto."
+        }
+      },
+      {
+        "id": 12,
+        "type": "multiple_choice",
+        "question": "Qual foi o principal desafio de liderança que Satya Nadella enfrentou na Microsoft?",
+        "options": [
+          "Falta de recursos financeiros",
+          "Cultura interna competitiva e silos organizacionais",
+          "Ausência de produtos inovadores",
+          "Excesso de funcionários talentosos"
+        ],
+        "correct_answer": 1,
+        "points": 4,
+        "difficulty": "medium",
+        "learning_objective": "Analisar casos de transformação organizacional",
+        "feedback": {
+          "correct": "Perfeito! Nadella teve que transformar a cultura de 'know-it-all' para 'learn-it-all' e quebrar silos.",
+          "incorrect": "O principal desafio foi cultural: transformar mentalidade competitiva interna e eliminar silos organizacionais."
+        }
+      },
+      {
+        "id": 13,
+        "type": "multiple_choice",
+        "question": "Na autoavaliação de competências, qual escala é recomendada?",
+        "options": [
+          "1-3 (Básico, Competente, Avançado)",
+          "1-5 (Básico a Avançado)",
+          "1-10 (Escala detalhada)",
+          "A-F (Escala académica)"
+        ],
+        "correct_answer": 1,
+        "points": 3,
+        "difficulty": "easy",
+        "learning_objective": "Aplicar ferramenta de autoavaliação",
+        "feedback": {
+          "correct": "Correto! A escala 1-5 oferece granularidade suficiente sem ser excessivamente complexa.",
+          "incorrect": "A ferramenta usa escala 1-5: 1-2 (Básico), 3 (Competente), 4-5 (Avançado)."
+        }
+      },
+      {
+        "id": 14,
+        "type": "multiple_choice",
+        "question": "Qual é o modelo recomendado para desenvolvimento de competências de liderança?",
+        "options": [
+          "50-30-20 (Educação-Experiência-Exposição)",
+          "70-20-10 (Experiência-Exposição-Educação)",
+          "80-15-5 (Experiência-Educação-Exposição)",
+          "60-25-15 (Educação-Experiência-Exposição)"
+        ],
+        "correct_answer": 1,
+        "points": 4,
+        "difficulty": "easy",
+        "learning_objective": "Conhecer modelo de desenvolvimento 70-20-10",
+        "feedback": {
+          "correct": "Excelente! O modelo 70-20-10 é baseado em pesquisa sobre como executivos se desenvolvem eficazmente.",
+          "incorrect": "O modelo 70-20-10 é padrão: 70% experiência prática, 20% exposição/mentoring, 10% educação formal."
+        }
+      },
+      {
+        "id": 15,
+        "type": "true_false",
+        "question": "Competências emergentes como 'Liderança Sustentável' são relevantes apenas para empresas do setor ambiental.",
+        "correct_answer": false,
+        "points": 3,
+        "difficulty": "medium",
+        "learning_objective": "Compreender relevância de competências emergentes",
+        "feedback": {
+          "correct": "Correto! Liderança Sustentável (ESG) é relevante para todos os setores devido a pressões de stakeholders e regulamentação.",
+          "incorrect": "Liderança Sustentável é relevante para todos os setores, pois ESG afeta decisões de investimento, talento e regulamentação."
+        }
+      },
+      {
+        "id": 16,
+        "type": "multiple_choice",
+        "question": "Qual característica diferencia a liderança transformacional da transacional?",
+        "options": [
+          "Foco em recompensas e punições vs. inspiração e desenvolvimento",
+          "Liderança individual vs. liderança em equipa",
+          "Gestão de curto prazo vs. gestão de longo prazo",
+          "Liderança formal vs. liderança informal"
+        ],
+        "correct_answer": 0,
+        "points": 5,
+        "difficulty": "medium",
+        "learning_objective": "Distinguir estilos de liderança",
+        "feedback": {
+          "correct": "Perfeito! Liderança transformacional inspira mudança através de visão; transacional usa sistema de recompensas.",
+          "incorrect": "A diferença chave é que transformacional inspira através de visão e valores, enquanto transacional usa recompensas/punições."
+        }
+      },
+      {
+        "id": 17,
+        "type": "multiple_choice",
+        "question": "Segundo Alexander, o Grande, qual era o segredo de sua liderança eficaz?",
+        "options": [
+          "Superioridade militar tecnológica",
+          "Liderança pelo exemplo na linha da frente",
+          "Delegação total de responsabilidades",
+          "Manutenção de distância dos soldados"
+        ],
+        "correct_answer": 1,
+        "points": 4,
+        "difficulty": "medium",
+        "learning_objective": "Extrair lições de líderes históricos",
+        "feedback": {
+          "correct": "Excelente! Alexandre sempre lutava ao lado dos soldados, demonstrando coragem e partilhando riscos.",
+          "incorrect": "Alexandre liderava pelo exemplo, lutando na linha da frente e partilhando os riscos com seus soldados."
+        }
+      },
+      {
+        "id": 18,
+        "type": "true_false",
+        "question": "Data-Driven Decision Making é considerada uma competência digital essencial para líderes modernos.",
+        "correct_answer": true,
+        "points": 3,
+        "difficulty": "easy",
+        "learning_objective": "Identificar competências digitais",
+        "feedback": {
+          "correct": "Correto! No mundo atual, líderes precisam saber usar dados e analytics para informar decisões estratégicas.",
+          "incorrect": "Data-Driven Decision Making é fundamental para líderes modernos navegarem complexidade com decisões baseadas em evidência."
+        }
+      },
+      {
+        "id": 19,
+        "type": "multiple_choice",
+        "question": "Qual é o principal desafio de liderança único do século XXI mencionado na lição?",
+        "options": [
+          "Gestão de recursos limitados",
+          "Velocidade acelerada de mudança",
+          "Competição entre empresas",
+          "Necessidade de lucro"
+        ],
+        "correct_answer": 1,
+        "points": 4,
+        "difficulty": "medium",
+        "learning_objective": "Identificar desafios contemporâneos",
+        "feedback": {
+          "correct": "Perfeito! A velocidade de mudança é sem precedentes - o que levava décadas agora muda em meses.",
+          "incorrect": "O desafio único é a velocidade: mudanças que antes levavam décadas agora ocorrem em meses ou dias."
+        }
+      },
+      {
+        "id": 20,
+        "type": "multiple_choice",
+        "question": "Qual estratégia é mais eficaz para um líder desenvolver competências em que tem gaps significativos?",
+        "options": [
+          "Apenas educação formal e certificações",
+          "Evitar situações que exponham essas fraquezas",
+          "Projetos stretch que requeiram essas competências",
+          "Delegar sempre para outros mais competentes"
+        ],
+        "correct_answer": 2,
+        "points": 5,
+        "difficulty": "medium",
+        "learning_objective": "Aplicar estratégias de desenvolvimento",
+        "feedback": {
+          "correct": "Excelente! Projetos stretch (70% do modelo 70-20-10) são a forma mais eficaz de desenvolver novas competências.",
+          "incorrect": "Projetos stretch oferecem experiência prática intensa, que é 70% do desenvolvimento eficaz segundo pesquisa."
+        }
+      }
+    ],
+    "completion_message": {
+      "title": "Quiz do Módulo 1 Concluído!",
+      "message": "Parabéns por completar o quiz dos Fundamentos da Liderança! Reveja as questões incorretas para consolidar seu aprendizado antes de avançar para o próximo módulo.",
+      "show_score": true,
+      "show_answers": true,
+      "show_detailed_feedback": true,
+      "next_steps": [
+        "Revise áreas com pontuação mais baixa",
+        "Complete os exercícios práticos do módulo",
+        "Faça sua autoavaliação de competências",
+        "Avance para o Módulo 2 se obteve 70% ou mais"
+      ]
+    }
+  }
+}

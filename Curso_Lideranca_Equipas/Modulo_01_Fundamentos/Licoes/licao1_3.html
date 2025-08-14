@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lição 1.3: Competências Essenciais do Líder Moderno</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 10px; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .lesson-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 20px 0; }
+        .info-card { background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; text-align: center; }
+        .section { background: white; padding: 30px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { color: #667eea; border-bottom: 3px solid #f0f0f0; padding-bottom: 10px; margin-top: 0; }
+        h3 { color: #764ba2; margin-top: 30px; }
+        .competency-framework { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0; }
+        .competency-category { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; }
+        .competency-list { list-style: none; padding: 0; margin: 15px 0; }
+        .competency-list li { padding: 8px 0; padding-left: 20px; position: relative; }
+        .competency-list li:before { content: "🎯"; position: absolute; left: 0; }
+        .skills-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0; }
+        .skill-card { background: #f8f9ff; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea; transition: transform 0.3s; }
+        .skill-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .skill-level { background: #e3f2fd; padding: 5px 10px; border-radius: 15px; font-size: 0.8em; display: inline-block; margin-top: 10px; }
+        .assessment-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .assessment-column { text-align: center; }
+        .assessment-level { padding: 15px; border-radius: 10px; margin: 10px 0; font-weight: bold; }
+        .level-basic { background: #ffcdd2; color: #c62828; }
+        .level-intermediate { background: #fff3e0; color: #ef6c00; }
+        .level-advanced { background: #e8f5e9; color: #2e7d32; }
+        .digital-skills { background: #e1f5fe; padding: 25px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #0288d1; }
+        .future-skills { background: #f3e5f5; padding: 25px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #7b1fa2; }
+        .self-assessment { background: #fff9e6; padding: 25px; border-radius: 10px; margin: 30px 0; border: 2px solid #ffd700; }
+        .competency-wheel { text-align: center; margin: 30px 0; }
+        .wheel-section { display: inline-block; margin: 10px; padding: 20px; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; text-align: center; }
+        .wheel-strategic { background: #667eea; }
+        .wheel-people { background: #4caf50; }
+        .wheel-execution { background: #ff9800; }
+        .wheel-personal { background: #9c27b0; }
+        .development-roadmap { background: #e8f5e9; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .roadmap-step { background: white; padding: 15px; margin: 10px 0; border-radius: 8px; border-left: 4px solid #4caf50; }
+        .key-insight { background: #e3f2fd; padding: 20px; border-left: 4px solid #2196f3; margin: 20px 0; border-radius: 0 8px 8px 0; }
+        .reflection-box { background: #e8f5e9; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .reflection-title { font-weight: bold; color: #4caf50; margin-bottom: 10px; }
+        .nav-buttons { text-align: center; margin: 30px 0; }
+        .btn { background: #667eea; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; margin: 0 10px; display: inline-block; transition: background 0.3s; }
+        .btn:hover { background: #5a67d8; }
+        .btn-secondary { background: #4caf50; }
+        .btn-secondary:hover { background: #45a049; }
+        .quote-highlight { font-size: 1.1em; font-style: italic; color: #667eea; text-align: center; padding: 20px; background: #f8f9ff; border-radius: 8px; margin: 20px 0; }
+        .progress-bar { background: #e0e0e0; height: 10px; border-radius: 5px; margin: 20px 0; }
+        .progress-fill { background: #667eea; height: 100%; border-radius: 5px; transition: width 0.3s; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Lição 1.3: Competências Essenciais do Líder Moderno</h1>
+        <p style="font-size: 1.1em; margin: 15px 0 0 0;">Framework Completo para Liderança do Século XXI</p>
+        
+        <div class="lesson-info">
+            <div class="info-card">
+                <strong>⏱️ Duração</strong><br>
+                60-75 min
+            </div>
+            <div class="info-card">
+                <strong>📊 Dificuldade</strong><br>
+                Intermediário
+            </div>
+            <div class="info-card">
+                <strong>🎯 Competências</strong><br>
+                20+ essenciais
+            </div>
+            <div class="info-card">
+                <strong>📚 Autoavaliação</strong><br>
+                Incluída
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Objetivos de Aprendizagem</h2>
+        
+        <p>Ao completar esta lição, você será capaz de:</p>
+        <ul>
+            <li><strong>Identificar</strong> as 20+ competências essenciais para liderança eficaz no século XXI</li>
+            <li><strong>Avaliar</strong> seu nível atual em cada competência através de autoavaliação estruturada</li>
+            <li><strong>Criar</strong> um plano de desenvolvimento personalizado baseado em gaps identificados</li>
+            <li><strong>Priorizar</strong> competências mais relevantes para seu contexto e objetivos específicos</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>O Framework das Quatro Dimensões</h2>
+        
+        <div class="quote-highlight">
+            "A liderança eficaz no século XXI requer um portfólio equilibrado de competências que span múltiplas dimensões." - Harvard Business Review
+        </div>
+
+        <div class="competency-wheel">
+            <h3>🎡 As Quatro Dimensões do Líder Moderno</h3>
+            <div class="wheel-section wheel-strategic">
+                <div>ESTRATÉGICA<br>Visão & Inovação</div>
+            </div>
+            <div class="wheel-section wheel-people">
+                <div>INTERPESSOAL<br>Pessoas & Relações</div>
+            </div>
+            <div class="wheel-section wheel-execution">
+                <div>EXECUÇÃO<br>Resultados & Performance</div>
+            </div>
+            <div class="wheel-section wheel-personal">
+                <div>PESSOAL<br>Autodomínio & Crescimento</div>
+            </div>
+        </div>
+
+        <div class="competency-framework">
+            <div class="competency-category">
+                <h3 style="margin-top: 0; color: white;">🎯 DIMENSÃO ESTRATÉGICA</h3>
+                <p style="opacity: 0.9;">Competências para navegar complexidade e criar futuro</p>
+                <ul class="competency-list">
+                    <li>Pensamento Estratégico</li>
+                    <li>Visão e Direcionamento</li>
+                    <li>Inovação e Criatividade</li>
+                    <li>Análise de Cenários</li>
+                    <li>Tomada de Decisão Complexa</li>
+                </ul>
+            </div>
+
+            <div class="competency-category">
+                <h3 style="margin-top: 0; color: white;">👥 DIMENSÃO INTERPESSOAL</h3>
+                <p style="opacity: 0.9;">Competências para inspirar e desenvolver pessoas</p>
+                <ul class="competency-list">
+                    <li>Inteligência Emocional</li>
+                    <li>Comunicação Eficaz</li>
+                    <li>Influência sem Autoridade</li>
+                    <li>Coaching e Mentoring</li>
+                    <li>Gestão de Conflitos</li>
+                </ul>
+            </div>
+
+            <div class="competency-category">
+                <h3 style="margin-top: 0; color: white;">⚡ DIMENSÃO EXECUÇÃO</h3>
+                <p style="opacity: 0.9;">Competências para entregar resultados consistentes</p>
+                <ul class="competency-list">
+                    <li>Gestão de Performance</li>
+                    <li>Orientação para Resultados</li>
+                    <li>Gestão de Projetos</li>
+                    <li>Accountability</li>
+                    <li>Otimização de Processos</li>
+                </ul>
+            </div>
+
+            <div class="competency-category">
+                <h3 style="margin-top: 0; color: white;">🌱 DIMENSÃO PESSOAL</h3>
+                <p style="opacity: 0.9;">Competências para autodomínio e crescimento contínuo</p>
+                <ul class="competency-list">
+                    <li>Autoconsciência</li>
+                    <li>Autorregulação</li>
+                    <li>Resiliência e Adaptabilidade</li>
+                    <li>Learning Agility</li>
+                    <li>Integridade e Ética</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Competências Detalhadas por Dimensão</h2>
+
+        <h3>🎯 DIMENSÃO ESTRATÉGICA</h3>
+        
+        <div class="skills-matrix">
+            <div class="skill-card">
+                <h4>🧠 Pensamento Estratégico</h4>
+                <p>Capacidade de ver o big picture, identificar padrões e conectar pontos aparentemente não relacionados para formar insights estratégicos.</p>
+                <div class="skill-level">Core Leadership</div>
+                <p><strong>Aplicação:</strong> Análise de mercado, planejamento estratégico, identificação de oportunidades.</p>
+            </div>
+
+            <div class="skill-card">
+                <h4>🔮 Visão e Direcionamento</h4>
+                <p>Habilidade de criar e comunicar uma visão inspiradora do futuro que mobilize pessoas em direção a objetivos comuns.</p>
+                <div class="skill-level">Core Leadership</div>
+                <p><strong>Aplicação:</strong> Definição de visão organizacional, alinhamento de equipas, storytelling inspirador.</p>
+            </div>
+
+            <div class="skill-card">
+                <h4>💡 Inovação e Criatividade</h4>
+                <p>Capacidade de pensar fora da caixa, gerar ideias disruptivas e criar ambiente que fomente inovação.</p>
+                <div class="skill-level">Future-Ready</div>
+                <p><strong>Aplicação:</strong> Design thinking, brainstorming, cultura de inovação, experimentação.</p>
+            </div>
+
+            <div class="skill-card">
+                <h4>🔍 Análise de Cenários</h4>
+                <p>Competência para analisar múltiplos cenários futuros, identificar riscos e oportunidades emergentes.</p>
+                <div class="skill-level">Advanced</div>
+                <p><strong>Aplicação:</strong> Planejamento de contingência, gestão de riscos, antecipação de trends.</p>
+            </div>
+        </div>
+
+        <h3>👥 DIMENSÃO INTERPESSOAL</h3>
+        
+        <div class="skills-matrix">
+            <div class="skill-card">
+                <h4>❤️ Inteligência Emocional</h4>
+                <p>Capacidade de reconhecer, compreender e gerir emoções próprias e dos outros de forma eficaz.</p>
+                <div class="skill-level">Core Leadership</div>
+                <p><strong>Componentes:</strong> Autoconsciência, autorregulação, motivação, empatia, competências sociais.</p>
+            </div>
+
+            <div class="skill-card">
+                <h4>💬 Comunicação Eficaz</h4>
+                <p>Arte de transmitir mensagens de forma clara, persuasiva e inspiradora através de múltiplos canais.</p>
+                <div class="skill-level">Core Leadership</div>
+                <p><strong>Inclui:</strong> Comunicação verbal, não-verbal, escrita, escuta ativa, feedback construtivo.</p>
+            </div>
+
+            <div class="skill-card">
+                <h4>🎭 Influência sem Autoridade</h4>
+                <p>Habilidade de influenciar e persuadir pessoas sem depender de poder hierárquico formal.</p>
+                <div class="skill-level">Advanced</div>
+                <p><strong>Técnicas:</strong> Reciprocidade, compromisso, prova social, autoridade, simpatia, escassez.</p>
+            </div>
+
+            <div class="skill-card">
+                <h4>🌱 Coaching e Mentoring</h4>
+                <p>Competência para desenvolver potencial de outros através de orientação, feedback e criação de oportunidades.</p>
+                <div class="skill-level">People Development</div>
+                <p><strong>Abordagens:</strong> Coaching situacional, mentoring de carreira, feedback 360º, development planning.</p>
+            </div>
+        </div>
+
+        <h3>⚡ DIMENSÃO EXECUÇÃO</h3>
+        
+        <div class="skills-matrix">
+            <div class="skill-card">
+                <h4>📈 Gestão de Performance</h4>
+                <p>Capacidade de estabelecer metas claras, monitorizar progresso e garantir entrega de resultados.</p>
+                <div class="skill-level">Management</div>
+                <p><strong>Ferramentas:</strong> OKRs, KPIs, dashboards, one-on-ones, performance reviews.</p>
+            </div>
+
+            <div class="skill-card">
+                <h4>🎯 Orientação para Resultados</h4>
+                <p>Foco implacável em atingir objetivos e superar expectativas através de execução disciplinada.</p>
+                <div class="skill-level">Core Leadership</div>
+                <p><strong>Características:</strong> Determinação, persistência, accountability, padrões elevados.</p>
+            </div>
+
+            <div class="skill-card">
+                <h4>📋 Gestão de Projetos</h4>
+                <p>Competência para planear, executar e entregar projetos complexos dentro de prazo, orçamento e qualidade.</p>
+                <div class="skill-level">Management</div>
+                <p><strong>Metodologias:</strong> Agile, Scrum, Kanban, Waterfall, híbridas.</p>
+            </div>
+
+            <div class="skill-card">
+                <h4>⚖️ Accountability</h4>
+                <p>Cultura de responsabilização pessoal e da equipa pelos resultados e compromissos assumidos.</p>
+                <div class="skill-level">Cultural</div>
+                <p><strong>Práticas:</strong> Clear expectations, regular check-ins, consequences, recognition.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Competências Digitais para Líderes 4.0</h2>
+
+        <div class="digital-skills">
+            <h3>💻 Competências Digitais Essenciais</h3>
+            
+            <div class="skills-matrix">
+                <div class="skill-card">
+                    <h4>🤖 Literacia em IA</h4>
+                    <p>Compreensão básica de inteligência artificial, machine learning e suas aplicações na liderança.</p>
+                    <div class="skill-level">Future-Ready</div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>📊 Data-Driven Decision Making</h4>
+                    <p>Capacidade de usar dados e analytics para informar decisões de liderança.</p>
+                    <div class="skill-level">Digital Core</div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>🌐 Liderança Virtual</h4>
+                    <p>Competência para liderar equipas remotas e híbridas eficazmente.</p>
+                    <div class="skill-level">Post-Pandemic</div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>🔄 Agilidade Digital</h4>
+                    <p>Rapidez para adaptar-se a novas tecnologias e processos digitais.</p>
+                    <div class="skill-level">Adaptability</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Competências Emergentes para o Futuro</h2>
+
+        <div class="future-skills">
+            <h3>🚀 Competências do Futuro (2025-2030)</h3>
+            
+            <div class="skills-matrix">
+                <div class="skill-card">
+                    <h4>🌱 Liderança Sustentável</h4>
+                    <p>Integração de princípios ESG e sustentabilidade nas decisões de liderança.</p>
+                    <div class="skill-level">ESG Leadership</div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>🧘 Mindful Leadership</h4>
+                    <p>Liderança consciente que integra bem-estar mental e mindfulness.</p>
+                    <div class="skill-level">Wellness-Focused</div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>🌍 Competência Intercultural</h4>
+                    <p>Capacidade de liderar equipas globais e navegar diferenças culturais.</p>
+                    <div class="skill-level">Global Leadership</div>
+                </div>
+
+                <div class="skill-card">
+                    <h4>🔮 Antecipação de Futuro</h4>
+                    <p>Habilidade de identificar e preparar-se para mudanças disruptivas.</p>
+                    <div class="skill-level">Strategic Foresight</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Autoavaliação de Competências</h2>
+
+        <div class="self-assessment">
+            <h3>📝 Ferramenta de Autoavaliação</h3>
+            <p>Para cada competência, avalie seu nível atual numa escala de 1-5:</p>
+            
+            <div class="assessment-grid">
+                <div class="assessment-column">
+                    <div class="assessment-level level-basic">BÁSICO (1-2)</div>
+                    <p>Compreensão limitada<br>Aplicação ocasional<br>Precisa de orientação</p>
+                </div>
+                <div class="assessment-column">
+                    <div class="assessment-level level-intermediate">COMPETENTE (3)</div>
+                    <p>Boa compreensão<br>Aplicação consistente<br>Trabalho independente</p>
+                </div>
+                <div class="assessment-column">
+                    <div class="assessment-level level-advanced">AVANÇADO (4-5)</div>
+                    <p>Domínio especializado<br>Ensina outros<br>Inovação na área</p>
+                </div>
+            </div>
+
+            <h4>🎯 Template de Autoavaliação (use numa folha separada):</h4>
+            <p><strong>DIMENSÃO ESTRATÉGICA:</strong></p>
+            <ul>
+                <li>Pensamento Estratégico: ___/5</li>
+                <li>Visão e Direcionamento: ___/5</li>
+                <li>Inovação e Criatividade: ___/5</li>
+                <li>Análise de Cenários: ___/5</li>
+                <li>Tomada de Decisão Complexa: ___/5</li>
+            </ul>
+
+            <p><strong>DIMENSÃO INTERPESSOAL:</strong></p>
+            <ul>
+                <li>Inteligência Emocional: ___/5</li>
+                <li>Comunicação Eficaz: ___/5</li>
+                <li>Influência sem Autoridade: ___/5</li>
+                <li>Coaching e Mentoring: ___/5</li>
+                <li>Gestão de Conflitos: ___/5</li>
+            </ul>
+
+            <p><strong>DIMENSÃO EXECUÇÃO:</strong></p>
+            <ul>
+                <li>Gestão de Performance: ___/5</li>
+                <li>Orientação para Resultados: ___/5</li>
+                <li>Gestão de Projetos: ___/5</li>
+                <li>Accountability: ___/5</li>
+                <li>Otimização de Processos: ___/5</li>
+            </ul>
+
+            <p><strong>DIMENSÃO PESSOAL:</strong></p>
+            <ul>
+                <li>Autoconsciência: ___/5</li>
+                <li>Autorregulação: ___/5</li>
+                <li>Resiliência e Adaptabilidade: ___/5</li>
+                <li>Learning Agility: ___/5</li>
+                <li>Integridade e Ética: ___/5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Roadmap de Desenvolvimento</h2>
+
+        <div class="development-roadmap">
+            <h3>🛤️ Seu Plano de Desenvolvimento Personalizado</h3>
+            
+            <div class="roadmap-step">
+                <h4>Passo 1: Análise de Gaps</h4>
+                <ul>
+                    <li>Identifique suas 3 competências mais fortes (pontuação 4-5)</li>
+                    <li>Identifique suas 3 principais gaps (pontuação 1-2)</li>
+                    <li>Considere quais competências são mais críticas para sua função atual</li>
+                    <li>Avalie quais competências serão mais importantes para seus objetivos futuros</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-step">
+                <h4>Passo 2: Priorização Estratégica</h4>
+                <ul>
+                    <li>Foque em 2-3 competências por vez (evite dispersão)</li>
+                    <li>Priorize competências que tenham maior impacto no seu contexto</li>
+                    <li>Balance desenvolvimento de pontos fortes com correção de gaps críticos</li>
+                    <li>Considere competências que são pré-requisitos para outras</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-step">
+                <h4>Passo 3: Estratégias de Desenvolvimento</h4>
+                <ul>
+                    <li><strong>70% Experiência:</strong> Projetos stretch, novas responsabilidades, job rotation</li>
+                    <li><strong>20% Exposição:</strong> Mentoring, coaching, networking com líderes experientes</li>
+                    <li><strong>10% Educação:</strong> Cursos, workshops, leitura, certificações</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-step">
+                <h4>Passo 4: Métricas e Acompanhamento</h4>
+                <ul>
+                    <li>Estabeleça metas específicas e mensuráveis para cada competência</li>
+                    <li>Solicite feedback regular de superiores, pares e subordinados</li>
+                    <li>Reavalie-se trimestralmente usando a mesma ferramenta</li>
+                    <li>Ajuste plano baseado em progresso e mudanças de contexto</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Síntese e Reflexões</h2>
+
+        <div class="key-insight">
+            <strong>💡 Insight Central:</strong> O líder moderno não precisa ser perfeito em todas as competências, mas deve ter consciência de suas forças e limitações, e um plano claro para desenvolvimento contínuo. O importante é equilibrar as quatro dimensões e adaptar-se constantemente às demandas em evolução.
+        </div>
+
+        <div class="reflection-box">
+            <div class="reflection-title">🤔 Questões para Reflexão Pessoal:</div>
+            <ol>
+                <li>Quais foram minhas maiores surpresas na autoavaliação?</li>
+                <li>Que competências são mais críticas para meu sucesso no contexto atual?</li>
+                <li>Qual dimensão (estratégica, interpessoal, execução, pessoal) é minha mais forte? E a mais fraca?</li>
+                <li>Como posso alavancar minhas competências mais fortes para desenvolver as mais fracas?</li>
+                <li>Que oportunidades existem no meu trabalho atual para praticar competências em desenvolvimento?</li>
+                <li>De quem posso procurar feedback honesto sobre minhas competências de liderança?</li>
+            </ol>
+        </div>
+
+        <h3>Principais Takeaways desta Lição:</h3>
+        <ul>
+            <li>✅ Liderança moderna requer portfólio equilibrado de competências em 4 dimensões</li>
+            <li>✅ Autoavaliação honesta é o primeiro passo para desenvolvimento eficaz</li>
+            <li>✅ Competências digitais são cada vez mais essenciais para líderes</li>
+            <li>✅ Desenvolvimento deve focar em 2-3 competências por vez para máximo impacto</li>
+            <li>✅ 70-20-10 é o modelo mais eficaz para desenvolvimento de liderança</li>
+            <li>✅ Feedback regular e reavaliação são cruciais para progresso sustentado</li>
+        </ul>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%;"></div>
+            </div>
+            <p><strong>📊 Progresso do Módulo:</strong> 3/6 lições completas (50%)</p>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="#" class="btn btn-secondary">← Lição Anterior</a>
+        <a href="#" class="btn">Próxima Lição: Inteligência Emocional →</a>
+    </div>
+
+    <div class="section" style="background: #f8f9ff; text-align: center;">
+        <h2>🎯 Próximos Passos</h2>
+        <p>Agora que tem o framework completo de competências e sua autoavaliação, está pronto para mergulhar profundamente numa das competências mais críticas: a Inteligência Emocional.</p>
+        <p><strong>Na próxima lição:</strong> Explorará como desenvolver e aplicar inteligência emocional na liderança.</p>
+    </div>
+</body>
+</html>

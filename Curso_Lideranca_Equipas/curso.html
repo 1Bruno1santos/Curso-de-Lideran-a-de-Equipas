@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Curso - DieselFormações</title>
+    <meta name="description" content="Portal de acesso ao curso completo de Liderança de Equipas - DieselFormações">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="course-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>DieselFormações</span>
+                </div>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Início
+                    </a>
+                    <a href="dashboard.html" class="nav-link">
+                        <i class="fas fa-chart-line"></i>
+                        Dashboard
+                    </a>
+                    <div class="progress-indicator">
+                        <span class="progress-text">0%</span>
+                        <div class="progress-bar-mini">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn-icon dark-mode-toggle" title="Modo Escuro">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="user-menu">
+                        <button class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="course-container">
+        <!-- Sidebar Navigation -->
+        <aside class="course-sidebar">
+            <div class="sidebar-header">
+                <h2>Módulos do Curso</h2>
+                <div class="course-progress">
+                    <div class="progress-circle">
+                        <svg class="progress-svg" width="60" height="60">
+                            <circle cx="30" cy="30" r="25" stroke-width="4" stroke="#e5e7eb" fill="none"/>
+                            <circle cx="30" cy="30" r="25" stroke-width="4" stroke="var(--primary-color)" 
+                                    fill="none" stroke-dasharray="157" stroke-dashoffset="157" 
+                                    class="progress-circle-fill"/>
+                        </svg>
+                        <span class="progress-percentage">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modules-list">
+                <!-- Módulo 0 -->
+                <div class="module-item" data-module="0">
+                    <div class="module-header">
+                        <div class="module-icon intro">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Introdução</h3>
+                            <span class="module-duration">30 min</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-check-circle completed"></i>
+                        </div>
+                    </div>
+                    <div class="module-lessons">
+                        <a href="00_Introducao/welcome.html" class="lesson-item completed">
+                            <i class="fas fa-video"></i>
+                            <span>Boas-vindas ao Curso</span>
+                            <i class="fas fa-check"></i>
+                        </a>
+                        <a href="00_Introducao/guia_estudante.html" class="lesson-item completed">
+                            <i class="fas fa-book"></i>
+                            <span>Guia do Estudante</span>
+                            <i class="fas fa-check"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Módulo 1 -->
+                <div class="module-item" data-module="1">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i class="fas fa-foundation"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Fundamentos da Liderança</h3>
+                            <span class="module-duration">6-8 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-clock in-progress"></i>
+                        </div>
+                    </div>
+                    <div class="module-lessons">
+                        <a href="Modulo_01_Fundamentos/Licoes/modulo1_introducao.html" class="lesson-item">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Introdução ao Módulo</span>
+                        </a>
+                        <a href="Modulo_01_Fundamentos/Licoes/licao1_1.html" class="lesson-item">
+                            <i class="fas fa-history"></i>
+                            <span>História e Evolução da Liderança</span>
+                        </a>
+                        <a href="Modulo_01_Fundamentos/Licoes/licao1_2.html" class="lesson-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Diferença entre Líder e Gestor</span>
+                        </a>
+                        <a href="Modulo_01_Fundamentos/Licoes/licao1_3.html" class="lesson-item">
+                            <i class="fas fa-star"></i>
+                            <span>Competências Essenciais</span>
+                        </a>
+                        <a href="Modulo_01_Fundamentos/Templates/template_autoavaliacao_lideranca.html" class="lesson-item special">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Autoavaliação de Competências</span>
+                            <span class="lesson-type">Interativo</span>
+                        </a>
+                        <a href="Modulo_01_Fundamentos/Exercicios/modulo1_exercicios.html" class="lesson-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Exercícios Práticos</span>
+                        </a>
+                        <div class="quiz-item" data-quiz="modulo1">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Quiz do Módulo 1</span>
+                            <button class="btn btn-sm btn-primary start-quiz">Iniciar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Módulos 2-10 (Preview) -->
+                <div class="module-item locked" data-module="2">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Estilos e Modelos de Liderança</h3>
+                            <span class="module-duration">5 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="module-preview">
+                        <p>Complete o Módulo 1 para desbloquear</p>
+                        <div class="preview-topics">
+                            <span>Liderança Situacional</span>
+                            <span>Estilos Adaptativos</span>
+                            <span>Modelo Hersey-Blanchard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item locked" data-module="3">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <div class="module-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Comunicação e Influência</h3>
+                            <span class="module-duration">6 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item locked" data-module="4">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Motivação e Engajamento</h3>
+                            <span class="module-duration">5 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item locked" data-module="5">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Desenvolvimento de Equipas</h3>
+                            <span class="module-duration">6 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item locked" data-module="6">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i class="fas fa-peace"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Gestão de Conflitos</h3>
+                            <span class="module-duration">5 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item locked" data-module="7">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Tomada de Decisão</h3>
+                            <span class="module-duration">5 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item locked" data-module="8">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Liderança em Mudança</h3>
+                            <span class="module-duration">6 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item locked" data-module="9">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Liderança Ética</h3>
+                            <span class="module-duration">5 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item locked" data-module="10">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="module-info">
+                            <h3>Plano de Ação</h3>
+                            <span class="module-duration">4 horas</span>
+                        </div>
+                        <div class="module-status">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <button class="btn btn-primary btn-block" onclick="window.location.href='dashboard.html'">
+                    <i class="fas fa-chart-line"></i>
+                    Ver Dashboard
+                </button>
+                <button class="btn btn-outline btn-block" onclick="app.exportProgress()">
+                    <i class="fas fa-download"></i>
+                    Exportar Progresso
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="course-content">
+            <!-- Welcome Screen -->
+            <div class="welcome-screen" id="welcomeScreen">
+                <div class="welcome-hero">
+                    <div class="welcome-animation">
+                        <div class="floating-elements">
+                            <div class="float-element" style="--delay: 0s">💼</div>
+                            <div class="float-element" style="--delay: 1s">🎯</div>
+                            <div class="float-element" style="--delay: 2s">📈</div>
+                            <div class="float-element" style="--delay: 3s">🏆</div>
+                        </div>
+                    </div>
+                    
+                    <div class="welcome-content">
+                        <h1>Bem-vindo ao Curso de Liderança de Equipas!</h1>
+                        <p class="welcome-subtitle">Pronto para transformar sua carreira e desenvolver competências de liderança de classe mundial?</p>
+                        
+                        <div class="course-overview">
+                            <div class="overview-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">10</div>
+                                    <div class="stat-label">Módulos</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Lições</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">25h</div>
+                                    <div class="stat-label">Conteúdo</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">Prático</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="welcome-actions">
+                            <button class="btn btn-primary btn-lg" onclick="startCourse()">
+                                <i class="fas fa-play"></i>
+                                Começar Jornada
+                            </button>
+                            <button class="btn btn-outline btn-lg" onclick="showCourseMap()">
+                                <i class="fas fa-map"></i>
+                                Ver Mapa do Curso
+                            </button>
+                        </div>
+
+                        <div class="learning-path">
+                            <h3>Sua Jornada de Aprendizagem</h3>
+                            <div class="path-steps">
+                                <div class="path-step">
+                                    <div class="step-icon">1</div>
+                                    <div class="step-content">
+                                        <h4>Fundamentos</h4>
+                                        <p>Construa bases sólidas de liderança</p>
+                                    </div>
+                                </div>
+                                <div class="path-arrow">→</div>
+                                <div class="path-step">
+                                    <div class="step-icon">2</div>
+                                    <div class="step-content">
+                                        <h4>Competências</h4>
+                                        <p>Desenvolva habilidades essenciais</p>
+                                    </div>
+                                </div>
+                                <div class="path-arrow">→</div>
+                                <div class="path-step">
+                                    <div class="step-icon">3</div>
+                                    <div class="step-content">
+                                        <h4>Aplicação</h4>
+                                        <p>Implemente no mundo real</p>
+                                    </div>
+                                </div>
+                                <div class="path-arrow">→</div>
+                                <div class="path-step">
+                                    <div class="step-icon">🏆</div>
+                                    <div class="step-content">
+                                        <h4>Certificação</h4>
+                                        <p>Comprove sua excelência</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Container (Hidden initially) -->
+            <div class="quiz-container" id="quizContainer" style="display: none;">
+                <!-- Quiz content will be injected here by JavaScript -->
+            </div>
+
+            <!-- Course Map Modal -->
+            <div class="modal" id="courseMapModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Mapa do Curso</h2>
+                        <button class="modal-close" onclick="closeCourseMap()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="course-roadmap">
+                            <div class="roadmap-item completed">
+                                <div class="roadmap-marker">✓</div>
+                                <div class="roadmap-content">
+                                    <h3>Módulo 0: Introdução</h3>
+                                    <p>Prepare-se para a jornada de liderança</p>
+                                </div>
+                            </div>
+                            <div class="roadmap-line"></div>
+                            <div class="roadmap-item current">
+                                <div class="roadmap-marker">1</div>
+                                <div class="roadmap-content">
+                                    <h3>Módulo 1: Fundamentos da Liderança</h3>
+                                    <p>Construa bases sólidas para liderança eficaz</p>
+                                </div>
+                            </div>
+                            <div class="roadmap-line"></div>
+                            <div class="roadmap-item locked">
+                                <div class="roadmap-marker">🔒</div>
+                                <div class="roadmap-content">
+                                    <h3>Módulos 2-10</h3>
+                                    <p>Desbloqueie conforme progride</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+    
+    <!-- Course specific JavaScript -->
+    <script>
+        function startCourse() {
+            // Hide welcome screen and navigate to first lesson
+            document.getElementById('welcomeScreen').style.display = 'none';
+            window.location.href = 'Modulo_01_Fundamentos/Licoes/modulo1_introducao.html';
+        }
+
+        function showCourseMap() {
+            document.getElementById('courseMapModal').style.display = 'flex';
+        }
+
+        function closeCourseMap() {
+            document.getElementById('courseMapModal').style.display = 'none';
+        }
+
+        // Initialize quiz functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quiz start buttons
+            document.querySelectorAll('.start-quiz').forEach(button => {
+                button.addEventListener('click', function() {
+                    const quizName = this.closest('.quiz-item').dataset.quiz;
+                    startQuiz(quizName);
+                });
+            });
+        });
+
+        async function startQuiz(quizName) {
+            try {
+                const response = await fetch(`Modulo_01_Fundamentos/Quizzes/${quizName}_quiz.json`);
+                const quizData = await response.json();
+                
+                // Hide welcome screen and show quiz
+                document.getElementById('welcomeScreen').style.display = 'none';
+                document.getElementById('quizContainer').style.display = 'block';
+                
+                // Initialize quiz with data
+                app.initQuiz(quizData.quiz);
+            } catch (error) {
+                console.error('Erro ao carregar quiz:', error);
+                alert('Erro ao carregar o quiz. Tente novamente.');
+            }
+        }
+
+        // Module toggle functionality
+        document.querySelectorAll('.module-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const moduleItem = this.closest('.module-item');
+                const lessons = moduleItem.querySelector('.module-lessons, .module-preview');
+                
+                if (lessons) {
+                    moduleItem.classList.toggle('expanded');
+                }
+            });
+        });
+
+        // Progress tracking
+        function updateProgress() {
+            const progress = app.getProgressData();
+            const progressPercentage = progress.totalProgress;
+            
+            // Update progress indicators
+            document.querySelectorAll('.progress-text').forEach(el => {
+                el.textContent = `${progressPercentage}%`;
+            });
+            
+            document.querySelectorAll('.progress-fill').forEach(el => {
+                el.style.width = `${progressPercentage}%`;
+            });
+            
+            // Update circular progress
+            const circumference = 2 * Math.PI * 25;
+            const offset = circumference - (progressPercentage / 100) * circumference;
+            document.querySelector('.progress-circle-fill').style.strokeDashoffset = offset;
+            document.querySelector('.progress-percentage').textContent = `${progressPercentage}%`;
+        }
+
+        // Update progress on page load
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
+</body>
+</html>

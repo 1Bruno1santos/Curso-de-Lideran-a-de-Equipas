@@ -1,0 +1,35 @@
+{
+  "name": "curso-lideranca-equipas",
+  "version": "1.0.0",
+  "description": "Curso completo de Liderança de Equipas - 20+ horas de formação profissional",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Build completed - ready for deployment'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "liderança",
+    "gestão",
+    "formação",
+    "curso online",
+    "desenvolvimento profissional"
+  ],
+  "author": "Bruno - DieselFormações",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "aos": "^2.3.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://curso-lideranca.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usuario/curso-lideranca-equipas"
+  }
+}

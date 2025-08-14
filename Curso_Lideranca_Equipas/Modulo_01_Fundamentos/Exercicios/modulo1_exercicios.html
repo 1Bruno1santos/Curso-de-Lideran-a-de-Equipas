@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1: Exercícios Práticos - Fundamentos da Liderança</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 10px; margin-bottom: 30px; text-align: center; }
+        h1 { margin: 0; font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .exercise { background: white; padding: 30px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 6px solid #667eea; }
+        .exercise-header { background: #f8f9ff; padding: 20px; margin: -30px -30px 20px -30px; border-radius: 10px 10px 0 0; border-bottom: 2px solid #667eea; }
+        .exercise-title { font-size: 1.4em; color: #667eea; margin: 0; font-weight: bold; }
+        .exercise-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin: 15px 0; }
+        .meta-item { background: white; padding: 10px; border-radius: 6px; text-align: center; border: 1px solid #e0e0e0; }
+        .meta-label { font-size: 0.9em; color: #666; margin-bottom: 5px; }
+        .meta-value { font-weight: bold; color: #667eea; }
+        h2 { color: #667eea; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+        h3 { color: #764ba2; margin-top: 25px; }
+        .instructions { background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #2196f3; }
+        .deliverable { background: #fff3e0; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #ff9800; }
+        .criteria { background: #e8f5e9; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #4caf50; }
+        .example { background: #f3e5f5; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #9c27b0; }
+        .template { background: #fff; border: 2px dashed #667eea; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        .checklist { list-style: none; padding: 0; }
+        .checklist li { padding: 8px 0; padding-left: 30px; position: relative; }
+        .checklist li:before { content: "☐"; position: absolute; left: 0; font-size: 1.2em; color: #667eea; }
+        .section { background: white; padding: 25px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .overview { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 10px; margin-bottom: 30px; }
+        .overview h2 { color: white; border: none; margin-top: 0; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0; }
+        .submission-box { background: #f0f4ff; padding: 20px; border-radius: 10px; margin: 20px 0; border: 2px solid #667eea; }
+        .resources { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Exercícios Práticos do Módulo 1</h1>
+        <p style="font-size: 1.2em; margin: 15px 0 0 0;">Fundamentos da Liderança - Aplicação Prática</p>
+    </div>
+
+    <div class="overview">
+        <h2>Visão Geral dos Exercícios</h2>
+        <p>Este conjunto de exercícios foi desenhado para consolidar seu aprendizado sobre os fundamentos da liderança através de aplicação prática. Cada exercício constrói sobre os conceitos aprendidos nas lições e o prepara para aplicar esse conhecimento no seu contexto profissional.</p>
+        
+        <div class="grid-3" style="margin-top: 20px;">
+            <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; text-align: center;">
+                <strong>📊 Total de Exercícios</strong><br>5 exercícios práticos
+            </div>
+            <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; text-align: center;">
+                <strong>⏱️ Tempo Estimado</strong><br>3-4 horas total
+            </div>
+            <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; text-align: center;">
+                <strong>📝 Entregáveis</strong><br>5 documentos/templates
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="exercise-header">
+            <div class="exercise-title">Exercício 1: Análise Histórica Pessoal de Liderança</div>
+            <div class="exercise-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Tempo</div>
+                    <div class="meta-value">45 min</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Dificuldade</div>
+                    <div class="meta-value">Fácil</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Tipo</div>
+                    <div class="meta-value">Reflexão</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Lição</div>
+                    <div class="meta-value">1.1</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>📋 Objetivo</h3>
+        <p>Conectar a evolução histórica da liderança com sua própria jornada e experiências pessoais de liderança.</p>
+
+        <div class="instructions">
+            <h4>📝 Instruções</h4>
+            <ol>
+                <li>Reflita sobre situações em que exerceu liderança (formal ou informal)</li>
+                <li>Identifique que "era" de liderança suas ações mais se assemelham</li>
+                <li>Analise como diferentes contextos influenciaram seu estilo</li>
+                <li>Extraia lições de grandes líderes históricos aplicáveis ao seu contexto</li>
+            </ol>
+        </div>
+
+        <div class="template">
+            <h4>📄 Template de Resposta</h4>
+            <p><strong>PARTE A: Minhas Experiências de Liderança</strong></p>
+            <p>1. <strong>Situação de Liderança 1:</strong><br>
+            Contexto: _______________<br>
+            Minha abordagem: _______________<br>
+            Resultado: _______________</p>
+
+            <p>2. <strong>Situação de Liderança 2:</strong><br>
+            Contexto: _______________<br>
+            Minha abordagem: _______________<br>
+            Resultado: _______________</p>
+
+            <p><strong>PARTE B: Análise Histórica</strong></p>
+            <p>3. <strong>Era que mais se identifica com meu estilo:</strong><br>
+            Era escolhida: _______________<br>
+            Justificativa: _______________</p>
+
+            <p>4. <strong>Líder histórico que mais me inspira:</strong><br>
+            Nome: _______________<br>
+            Qualidade específica: _______________<br>
+            Como posso aplicar: _______________</p>
+
+            <p><strong>PARTE C: Lições para o Futuro</strong></p>
+            <p>5. <strong>3 princípios atemporais que quero desenvolver:</strong><br>
+            1. _______________<br>
+            2. _______________<br>
+            3. _______________</p>
+        </div>
+
+        <div class="criteria">
+            <h4>✅ Critérios de Avaliação</h4>
+            <ul class="checklist">
+                <li>Análise honesta e reflexiva das experiências pessoais</li>
+                <li>Conexão clara entre exemplos históricos e situações pessoais</li>
+                <li>Identificação de padrões e tendências no próprio estilo</li>
+                <li>Plano concreto para aplicar lições históricas</li>
+                <li>Escrita clara e estruturada</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="exercise-header">
+            <div class="exercise-title">Exercício 2: Diagnóstico Leader vs. Manager</div>
+            <div class="exercise-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Tempo</div>
+                    <div class="meta-value">40 min</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Dificuldade</div>
+                    <div class="meta-value">Médio</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Tipo</div>
+                    <div class="meta-value">Autoavaliação</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Lição</div>
+                    <div class="meta-value">1.2</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>📋 Objetivo</h3>
+        <p>Diagnosticar suas tendências naturais entre liderança e gestão e criar plano para desenvolver equilibrio.</p>
+
+        <div class="instructions">
+            <h4>📝 Instruções</h4>
+            <ol>
+                <li>Complete a autoavaliação de tendências leader vs. manager</li>
+                <li>Analise 3 situações reais do seu trabalho atual</li>
+                <li>Identifique quando cada abordagem seria mais eficaz</li>
+                <li>Crie plano de desenvolvimento para se tornar um leader-manager</li>
+            </ol>
+        </div>
+
+        <div class="template">
+            <h4>📊 Autoavaliação Leader vs. Manager</h4>
+            <p>Para cada afirmação, marque sua tendência numa escala de 1-5:</p>
+            <p><em>1 = Muito mais Gestor | 3 = Equilibrado | 5 = Muito mais Líder</em></p>
+
+            <div class="grid-2">
+                <div>
+                    <p><strong>Dimensões de Avaliação:</strong></p>
+                    <ul>
+                        <li>Foco principal: Eficiência (1) vs. Eficácia (5) ___/5</li>
+                        <li>Horizonte: Curto prazo (1) vs. Longo prazo (5) ___/5</li>
+                        <li>Abordagem: Controlo (1) vs. Inspiração (5) ___/5</li>
+                        <li>Mudança: Reativo (1) vs. Proativo (5) ___/5</li>
+                        <li>Comunicação: Informar (1) vs. Motivar (5) ___/5</li>
+                    </ul>
+                </div>
+                <div>
+                    <p><strong>Pontuação Total: ___/25</strong></p>
+                    <p><strong>Interpretação:</strong></p>
+                    <ul>
+                        <li>5-11: Tendência forte para gestão</li>
+                        <li>12-18: Equilibrado (ideal)</li>
+                        <li>19-25: Tendência forte para liderança</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p><strong>Análise de Situações Reais:</strong></p>
+            <p>1. <strong>Situação que requer GESTÃO:</strong><br>
+            Descrição: _______________<br>
+            Por que gestão é apropriada: _______________</p>
+
+            <p>2. <strong>Situação que requer LIDERANÇA:</strong><br>
+            Descrição: _______________<br>
+            Por que liderança é apropriada: _______________</p>
+
+            <p>3. <strong>Situação que requer AMBAS:</strong><br>
+            Descrição: _______________<br>
+            Como integraria ambas: _______________</p>
+        </div>
+
+        <div class="deliverable">
+            <h4>📤 Entregável</h4>
+            <p><strong>Plano de Desenvolvimento Leader-Manager</strong> incluindo:</p>
+            <ul>
+                <li>Resultado da autoavaliação e interpretação</li>
+                <li>Análise das 3 situações reais</li>
+                <li>3 ações específicas para desenvolver lado mais fraco</li>
+                <li>Cronograma de 90 dias com marcos</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="exercise-header">
+            <div class="exercise-title">Exercício 3: Mapeamento de Competências Pessoais</div>
+            <div class="exercise-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Tempo</div>
+                    <div class="meta-value">60 min</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Dificuldade</div>
+                    <div class="meta-value">Médio</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Tipo</div>
+                    <div class="meta-value">Assessment</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Lição</div>
+                    <div class="meta-value">1.3</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>📋 Objetivo</h3>
+        <p>Realizar mapeamento completo de suas competências atuais e criar roadmap personalizado de desenvolvimento.</p>
+
+        <div class="instructions">
+            <h4>📝 Instruções</h4>
+            <ol>
+                <li>Complete a autoavaliação das 20 competências do framework</li>
+                <li>Solicite feedback de 3 pessoas (superior, par, subordinado)</li>
+                <li>Identifique gaps críticos e pontos fortes</li>
+                <li>Priorize 3 competências para desenvolvimento</li>
+                <li>Crie plano de ação usando modelo 70-20-10</li>
+            </ol>
+        </div>
+
+        <div class="template">
+            <h4>📊 Matriz de Competências (use escala 1-5)</h4>
+            
+            <div class="grid-2">
+                <div>
+                    <p><strong>DIMENSÃO ESTRATÉGICA:</strong></p>
+                    <ul>
+                        <li>Pensamento Estratégico: ___/5</li>
+                        <li>Visão e Direcionamento: ___/5</li>
+                        <li>Inovação e Criatividade: ___/5</li>
+                        <li>Análise de Cenários: ___/5</li>
+                        <li>Tomada de Decisão Complexa: ___/5</li>
+                    </ul>
+                    <p><strong>DIMENSÃO INTERPESSOAL:</strong></p>
+                    <ul>
+                        <li>Inteligência Emocional: ___/5</li>
+                        <li>Comunicação Eficaz: ___/5</li>
+                        <li>Influência sem Autoridade: ___/5</li>
+                        <li>Coaching e Mentoring: ___/5</li>
+                        <li>Gestão de Conflitos: ___/5</li>
+                    </ul>
+                </div>
+                <div>
+                    <p><strong>DIMENSÃO EXECUÇÃO:</strong></p>
+                    <ul>
+                        <li>Gestão de Performance: ___/5</li>
+                        <li>Orientação para Resultados: ___/5</li>
+                        <li>Gestão de Projetos: ___/5</li>
+                        <li>Accountability: ___/5</li>
+                        <li>Otimização de Processos: ___/5</li>
+                    </ul>
+                    <p><strong>DIMENSÃO PESSOAL:</strong></p>
+                    <ul>
+                        <li>Autoconsciência: ___/5</li>
+                        <li>Autorregulação: ___/5</li>
+                        <li>Resiliência e Adaptabilidade: ___/5</li>
+                        <li>Learning Agility: ___/5</li>
+                        <li>Integridade e Ética: ___/5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p><strong>ANÁLISE DE GAPS:</strong></p>
+            <p>Pontos Fortes (4-5): _______________</p>
+            <p>Gaps Críticos (1-2): _______________</p>
+            <p>Oportunidades de Melhoria (3): _______________</p>
+
+            <p><strong>PRIORIZAÇÃO (escolha 3):</strong></p>
+            <p>1. Competência prioritária: _______________<br>
+            Justificativa: _______________</p>
+            <p>2. Competência prioritária: _______________<br>
+            Justificativa: _______________</p>
+            <p>3. Competência prioritária: _______________<br>
+            Justificativa: _______________</p>
+        </div>
+
+        <div class="deliverable">
+            <h4>📤 Entregável</h4>
+            <p><strong>Roadmap de Desenvolvimento 70-20-10</strong> para cada competência priorizada:</p>
+            <ul>
+                <li><strong>70% Experiência:</strong> Projetos, responsabilidades, desafios específicos</li>
+                <li><strong>20% Exposição:</strong> Mentores, networking, feedback sources</li>
+                <li><strong>10% Educação:</strong> Cursos, livros, certificações</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="exercise-header">
+            <div class="exercise-title">Exercício 4: Cenário de Liderança Situacional</div>
+            <div class="exercise-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Tempo</div>
+                    <div class="meta-value">50 min</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Dificuldade</div>
+                    <div class="meta-value">Difícil</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Tipo</div>
+                    <div class="meta-value">Caso Prático</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Lição</div>
+                    <div class="meta-value">1.1-1.3</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>📋 Objetivo</h3>
+        <p>Aplicar conceitos de liderança situacional numa situação complexa que requer integração de liderança e gestão.</p>
+
+        <div class="example">
+            <h4>🎭 Cenário: Crise na TechCorp</h4>
+            <p><strong>Situação:</strong> Você é VP de Produto da TechCorp. A empresa lançou um produto há 6 meses que não está atendendo expectativas. Vendas são 40% abaixo do previsto, há bugs críticos, a equipa está desmotivada, e o CEO quer uma solução em 60 dias ou cancelará o produto.</p>
+            
+            <p><strong>Stakeholders:</strong></p>
+            <ul>
+                <li><strong>Equipa de Produto (8 pessoas):</strong> Desmotivada, alguns culpam outros departamentos</li>
+                <li><strong>CEO:</strong> Pressionado pelo conselho, considera você responsável</li>
+                <li><strong>Clientes:</strong> Frustrados, alguns cancelaram contratos</li>
+                <li><strong>Equipas de Vendas e Marketing:</strong> Perderam confiança no produto</li>
+            </ul>
+
+            <p><strong>Recursos:</strong> Orçamento limitado, 60 dias, equipa atual, possibilidade de contratar 2 consultores externos.</p>
+        </div>
+
+        <div class="instructions">
+            <h4>📝 Instruções</h4>
+            <ol>
+                <li>Analise a situação usando framework de liderança situacional</li>
+                <li>Identifique que competências são mais críticas</li>
+                <li>Desenvolva plano de ação integrando liderança e gestão</li>
+                <li>Defina métricas de sucesso e cronograma</li>
+                <li>Antecipe resistências e prepare estratégias de mitigação</li>
+            </ol>
+        </div>
+
+        <div class="template">
+            <h4>📋 Template de Resposta</h4>
+            
+            <p><strong>1. ANÁLISE SITUACIONAL:</strong></p>
+            <p>Urgência (Alta/Média/Baixa): _______________</p>
+            <p>Complexidade (Alta/Média/Baixa): _______________</p>
+            <p>Abordagem recomendada: ☐ Mais Gestão ☐ Mais Liderança ☐ Equilibradas</p>
+            <p>Justificativa: _______________</p>
+
+            <p><strong>2. COMPETÊNCIAS CRÍTICAS (escolha 5):</strong></p>
+            <p>1. _______________  2. _______________  3. _______________</p>
+            <p>4. _______________  5. _______________</p>
+
+            <p><strong>3. PLANO DE AÇÃO (60 dias):</strong></p>
+            <p><strong>Semanas 1-2 (ESTABILIZAÇÃO):</strong><br>
+            Ações de gestão: _______________<br>
+            Ações de liderança: _______________</p>
+
+            <p><strong>Semanas 3-6 (EXECUÇÃO):</strong><br>
+            Ações de gestão: _______________<br>
+            Ações de liderança: _______________</p>
+
+            <p><strong>Semanas 7-8 (CONSOLIDAÇÃO):</strong><br>
+            Ações de gestão: _______________<br>
+            Ações de liderança: _______________</p>
+
+            <p><strong>4. MÉTRICAS DE SUCESSO:</strong></p>
+            <p>- Produto: _______________</p>
+            <p>- Equipa: _______________</p>
+            <p>- Negócio: _______________</p>
+
+            <p><strong>5. GESTÃO DE RESISTÊNCIAS:</strong></p>
+            <p>Resistência antecipada: _______________<br>
+            Estratégia de mitigação: _______________</p>
+        </div>
+
+        <div class="criteria">
+            <h4>✅ Critérios de Avaliação</h4>
+            <ul class="checklist">
+                <li>Análise situacional clara e justificada</li>
+                <li>Seleção apropriada de competências críticas</li>
+                <li>Plano balanceado entre liderança e gestão</li>
+                <li>Cronograma realista e detalhado</li>
+                <li>Métricas específicas e mensuráveis</li>
+                <li>Antecipação proativa de desafios</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="exercise">
+        <div class="exercise-header">
+            <div class="exercise-title">Exercício 5: Manifesto Pessoal de Liderança</div>
+            <div class="exercise-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Tempo</div>
+                    <div class="meta-value">45 min</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Dificuldade</div>
+                    <div class="meta-value">Médio</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Tipo</div>
+                    <div class="meta-value">Síntese</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Lição</div>
+                    <div class="meta-value">Todas</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>📋 Objetivo</h3>
+        <p>Sintetizar aprendizados do módulo num manifesto pessoal que servirá como bússola para sua jornada de liderança.</p>
+
+        <div class="instructions">
+            <h4>📝 Instruções</h4>
+            <ol>
+                <li>Reflita sobre principais insights do módulo</li>
+                <li>Articule sua filosofia pessoal de liderança</li>
+                <li>Defina princípios não-negociáveis</li>
+                <li>Estabeleça compromissos específicos</li>
+                <li>Crie declaração inspiradora e authentica</li>
+            </ol>
+        </div>
+
+        <div class="template">
+            <h4>📜 Template do Manifesto</h4>
+            
+            <p><strong>MEU MANIFESTO DE LIDERANÇA</strong></p>
+            
+            <p><strong>1. MINHA DEFINIÇÃO DE LIDERANÇA:</strong><br>
+            Para mim, liderança é... _______________</p>
+
+            <p><strong>2. MEUS VALORES FUNDAMENTAIS:</strong><br>
+            1. _______________<br>
+            2. _______________<br>
+            3. _______________</p>
+
+            <p><strong>3. MINHA VISÃO COMO LÍDER:</strong><br>
+            Aspiro a ser o tipo de líder que... _______________</p>
+
+            <p><strong>4. MEUS PRINCÍPIOS ATEMPORAIS:</strong><br>
+            - _______________<br>
+            - _______________<br>
+            - _______________</p>
+
+            <p><strong>5. COMO INTEGRO LIDERANÇA E GESTÃO:</strong><br>
+            _______________</p>
+
+            <p><strong>6. MINHAS COMPETÊNCIAS PRIORITÁRIAS:</strong><br>
+            Continuarei desenvolvendo... _______________</p>
+
+            <p><strong>7. MEU COMPROMISSO:</strong><br>
+            Comprometo-me a... _______________</p>
+
+            <p><strong>8. MINHA DECLARAÇÃO INSPIRADORA:</strong><br>
+            <em>(1-2 frases que capturam sua essência como líder)</em><br>
+            _______________</p>
+        </div>
+
+        <div class="deliverable">
+            <h4>📤 Entregável Final</h4>
+            <p><strong>Manifesto Pessoal de Liderança</strong> formatado como documento de 1-2 páginas que incluía:</p>
+            <ul>
+                <li>Declaração pessoal de liderança</li>
+                <li>Valores e princípios fundamentais</li>
+                <li>Compromissos específicos para desenvolvimento</li>
+                <li>Frase inspiradora/motto pessoal</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="submission-box">
+        <h2>📤 Submissão dos Exercícios</h2>
+        <p><strong>Para completar o Módulo 1, você deve submeter:</strong></p>
+        <ol>
+            <li>Análise histórica pessoal de liderança</li>
+            <li>Diagnóstico e plano leader-manager</li>
+            <li>Mapeamento de competências e roadmap de desenvolvimento</li>
+            <li>Solução para cenário de crise da TechCorp</li>
+            <li>Manifesto pessoal de liderança</li>
+        </ol>
+        
+        <div class="criteria">
+            <h4>✅ Critérios Gerais de Avaliação</h4>
+            <ul class="checklist">
+                <li>Aplicação correta dos conceitos aprendidos</li>
+                <li>Reflexão honesta e profunda</li>
+                <li>Soluções práticas e implementáveis</li>
+                <li>Escrita clara e bem estruturada</li>
+                <li>Evidência de pensamento crítico</li>
+                <li>Conexão entre teoria e prática</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="resources">
+        <h2>📚 Recursos de Apoio</h2>
+        <h3>Material de Consulta:</h3>
+        <ul>
+            <li>Lições 1.1 a 1.3 do módulo</li>
+            <li>Templates de autoavaliação</li>
+            <li>Exemplos de manifestos de liderança</li>
+            <li>Bibliografia recomendada</li>
+        </ul>
+        
+        <h3>Suporte:</h3>
+        <ul>
+            <li>Fórum de discussão do curso</li>
+            <li>Sessões de Q&A semanais</li>
+            <li>Email de suporte: exercicios@cursoslideranca.com</li>
+        </ul>
+    </div>
+
+    <div class="section" style="text-align: center; background: #f8f9ff;">
+        <h2>🎯 Próximos Passos</h2>
+        <p>Após completar todos os exercícios, você estará pronto para:</p>
+        <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+            <li>✅ Fazer o quiz final do Módulo 1</li>
+            <li>✅ Avançar para o Módulo 2: Estilos e Modelos de Liderança</li>
+            <li>✅ Aplicar os fundamentos no seu contexto profissional</li>
+            <li>✅ Continuar desenvolvendo as competências identificadas</li>
+        </ul>
+        
+        <p style="margin-top: 20px;"><strong>Sucesso na aplicação prática! 🚀</strong></p>
+    </div>
+</body>
+</html>
