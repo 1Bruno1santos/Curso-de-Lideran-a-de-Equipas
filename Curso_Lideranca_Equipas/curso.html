@@ -452,6 +452,12 @@
     
     <!-- Course specific JavaScript -->
     <script>
+        // Initialize the app when DOM is ready
+        let app;
+        document.addEventListener('DOMContentLoaded', function() {
+            app = new CursoLideranca();
+        });
+
         function startCourse() {
             // Hide welcome screen and navigate to first lesson
             document.getElementById('welcomeScreen').style.display = 'none';
@@ -494,20 +500,24 @@
             }
         }
 
-        // Module toggle functionality
-        document.querySelectorAll('.module-header').forEach(header => {
-            header.addEventListener('click', function() {
-                const moduleItem = this.closest('.module-item');
-                const lessons = moduleItem.querySelector('.module-lessons, .module-preview');
-                
-                if (lessons) {
-                    moduleItem.classList.toggle('expanded');
-                }
+        // Module toggle functionality - wrapped in DOMContentLoaded to ensure elements exist
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.module-header').forEach(header => {
+                header.addEventListener('click', function() {
+                    const moduleItem = this.closest('.module-item');
+                    const lessons = moduleItem.querySelector('.module-lessons, .module-preview');
+                    
+                    if (lessons) {
+                        moduleItem.classList.toggle('expanded');
+                    }
+                });
             });
         });
 
         // Progress tracking
         function updateProgress() {
+            if (!app) return; // Wait for app to be initialized
+            
             const progress = app.getProgressData();
             const progressPercentage = progress.totalProgress;
             
@@ -521,14 +531,23 @@
             });
             
             // Update circular progress
-            const circumference = 2 * Math.PI * 25;
-            const offset = circumference - (progressPercentage / 100) * circumference;
-            document.querySelector('.progress-circle-fill').style.strokeDashoffset = offset;
-            document.querySelector('.progress-percentage').textContent = `${progressPercentage}%`;
+            const circleFill = document.querySelector('.progress-circle-fill');
+            if (circleFill) {
+                const circumference = 2 * Math.PI * 25;
+                const offset = circumference - (progressPercentage / 100) * circumference;
+                circleFill.style.strokeDashoffset = offset;
+            }
+            
+            const percentageEl = document.querySelector('.progress-percentage');
+            if (percentageEl) {
+                percentageEl.textContent = `${progressPercentage}%`;
+            }
         }
 
-        // Update progress on page load
-        document.addEventListener('DOMContentLoaded', updateProgress);
+        // Update progress on page load after app is initialized
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(updateProgress, 100); // Give time for app to initialize
+        });
     </script>
 </body>
 </html>
